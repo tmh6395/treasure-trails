@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/treasure-trails/static/css/main.6bba0c49.chunk.css",
-    "main.js": "/treasure-trails/static/js/main.3ad265da.chunk.js",
-    "main.js.map": "/treasure-trails/static/js/main.3ad265da.chunk.js.map",
+    "main.css": "/treasure-trails/static/css/main.df686e09.chunk.css",
+    "main.js": "/treasure-trails/static/js/main.bed32ebb.chunk.js",
+    "main.js.map": "/treasure-trails/static/js/main.bed32ebb.chunk.js.map",
     "runtime-main.js": "/treasure-trails/static/js/runtime-main.18dc96a5.js",
     "runtime-main.js.map": "/treasure-trails/static/js/runtime-main.18dc96a5.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/treasure-trails/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.bf51d669.chunk.js": "/treasure-trails/static/js/2.bf51d669.chunk.js",
-    "static/js/2.bf51d669.chunk.js.map": "/treasure-trails/static/js/2.bf51d669.chunk.js.map",
+    "static/js/2.954006be.chunk.js": "/treasure-trails/static/js/2.954006be.chunk.js",
+    "static/js/2.954006be.chunk.js.map": "/treasure-trails/static/js/2.954006be.chunk.js.map",
     "index.html": "/treasure-trails/index.html",
-    "precache-manifest.a463fa753151dd1773898b0517c3fb1f.js": "/treasure-trails/precache-manifest.a463fa753151dd1773898b0517c3fb1f.js",
+    "precache-manifest.70850d76c887feb8b35e17301fa88424.js": "/treasure-trails/precache-manifest.70850d76c887feb8b35e17301fa88424.js",
     "service-worker.js": "/treasure-trails/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/treasure-trails/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.6bba0c49.chunk.css.map": "/treasure-trails/static/css/main.6bba0c49.chunk.css.map"
+    "static/css/main.df686e09.chunk.css.map": "/treasure-trails/static/css/main.df686e09.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.18dc96a5.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.bf51d669.chunk.js",
-    "static/css/main.6bba0c49.chunk.css",
-    "static/js/main.3ad265da.chunk.js"
+    "static/js/2.954006be.chunk.js",
+    "static/css/main.df686e09.chunk.css",
+    "static/js/main.bed32ebb.chunk.js"
   ]
 }
