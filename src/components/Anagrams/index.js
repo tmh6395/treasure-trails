@@ -24,13 +24,27 @@ class App extends Component {
 	}
 
 	render() {
+
+		window.onscroll = function () { scrollFunction() };
+		function scrollFunction() {
+			let windowOrigin = window.location.origin;
+			if (windowOrigin === "http://localhost:3000" || windowOrigin === "https://tmh6395.github.io") {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("btn-to-top").style.display = "block";
+				}
+				else {
+					document.getElementById("btn-to-top").style.display = "none";
+				}
+			}
+		}
+
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row>
 					<Col xs={1}></Col>
 					<Col xs={1}>
 						<button id="btn-to-home">
-							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
 					<Col xs={7}></Col>

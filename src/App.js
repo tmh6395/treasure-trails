@@ -23,8 +23,8 @@ class App extends Component {
         <Row id="main-row">
           <Col>
             <Switch>
-              <Route exact path="/treasure-trails" component={Home} />
-              <Route exact path="/treasure-trails/anagrams" component={Anagrams} />
+              <Route exact path="/treasure-trails-helper" component={Home} />
+              <Route exact path="/treasure-trails-helper/anagrams" component={Anagrams} />
               {/* <Route exact path="/treasure-trails/challenges" component={Challenges} /> */}
               {/* <Route exact path="/treasure-trails/coordinates" component={Coordinates} /> */}
               {/* <Route exact path="/treasure-trails/cryptics" component={Cryptics} /> */}

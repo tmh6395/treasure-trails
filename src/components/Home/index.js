@@ -8,55 +8,55 @@ class Home extends Component {
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/anagrams"}>
+					to={"/treasure-trails-helper/anagrams"}>
 					<p>Anagrams</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/challenges"}>
+					to={"/treasure-trails-helper/challenges"}>
 					<p>Challenges</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/coordinates"}>
+					to={"/treasure-trails-helper/coordinates"}>
 					<p>Coordinates</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/cryptics"}>
+					to={"/treasure-trails-helper/cryptics"}>
 					<p>Cryptics</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/lockboxes"}>
+					to={"/treasure-trails-helper/lockboxes"}>
 					<p>Lockboxes</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/maps"}>
+					to={"/treasure-trails-helper/maps"}>
 					<p>Maps</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/puzzleboxguide"}>
+					to={"/treasure-trails-helper/puzzleboxguide"}>
 					<p>Puzzle Box Guide</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/scans"}>
+					to={"/treasure-trails-helper/scans"}>
 					<p>Scans</p>
 				</Link>
 
 				<Link
 					className="main-menu-options"
-					to={"/treasure-trails/skillingriddles"}>
+					to={"/treasure-trails-helper/skillingriddles"}>
 					<p>Skilling Riddles</p>
 				</Link>
 

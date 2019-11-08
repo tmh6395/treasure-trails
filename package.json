@@ -2,7 +2,7 @@
   "name": "treasure_trails",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tmh6395.github.io/treasure-trails/",
+  "homepage": "https://tmh6395.github.io/treasure-trails-helper/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
