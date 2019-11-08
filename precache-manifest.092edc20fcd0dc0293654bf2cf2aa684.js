@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbee059701effa29f95b5581cc4f2f4f",
+    "revision": "5d8dcf3b2ac7e4040df6ce330fd2958d",
     "url": "/treasure-trails-helper/index.html"
   },
   {
