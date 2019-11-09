@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import AnagramData from "../../clue_data/anagrams.json";
+import ChallengeData from "../../clue_data/challenges.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -23,16 +23,17 @@ class App extends Component {
 	}
 
 	render() {
-		// // Used to disallow submitting searches
-		// this.formPreventDefault = this.formPreventDefault.bind(this);
 
-
-		window.onscroll = () => {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				document.getElementById("btn-to-top").style.display = "block";
-			}
-			else {
-				document.getElementById("btn-to-top").style.display = "none";
+		window.onscroll = function () { scrollFunction() };
+		function scrollFunction() {
+			let windowOrigin = window.location.origin;
+			if (windowOrigin === "http://localhost:3000" || windowOrigin === "https://tmh6395.github.io") {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("btn-to-top").style.display = "block";
+				}
+				else {
+					document.getElementById("btn-to-top").style.display = "none";
+				}
 			}
 		}
 
@@ -65,13 +66,12 @@ class App extends Component {
 
 					<Col xs={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
-						{AnagramData.map((anagram, index) => {
-							if (anagram.question.toLowerCase().includes(this.state.query.toLowerCase())) {
+						{ChallengeData.map((challenge, index) => {
+							if (challenge.question.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<h1><span>Anagrams:</span> {anagram.question}</h1>
-									<p><span>Solution:</span> {anagram.answer}</p>
-									<p><span>Location:</span> {anagram.location}</p>
-									<p><span>Challenge (if applicable):</span> {anagram.challenge}</p>
+									<h1><span>Challenges:</span> {challenge.question}</h1>
+									<p><span>Solution:</span> {challenge.answer}</p>
+									<p><span>Asked by:</span> {challenge.asker}</p>
 								</div>
 							}
 						})}

@@ -1,0 +1,276 @@
+[
+	{
+		"riddle": "A view of the city from high above. I can hear their prayers below.",
+		"solution": "Go to the top of the Hefin Agility Course.",
+		"requirements": {
+			"quest": "Plague's End",
+			"skills": [
+				"77 Agility"
+			]
+		}
+	},
+	{
+		"riddle": "Being open to Chaos can raise your defences. It may also bring you closer to death. Take a moment to bottle this feeling.",
+		"solution": "Create a Zamorak brew. (Mix jangerberries into a torstol potion).",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"78 Herblore"
+			]
+		}
+	},
+	{
+		"riddle": "Catching only one shark. That don't impress me much.",
+		"solution": "Catch two sharks at once. Great white sharks count toward the challenge. You can also use a Dwarven fish extractor on the double resources mode.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"76 Agility, ",
+				"76 Fishing"
+			]
+		}
+	},
+	{
+		"riddle": "Charm me and I shall unlock. But be brave in the darkness.",
+		"solution": "Catch a charming moth in the Wilderness.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"88 Hunter, ",
+				"83 Agility"
+			]
+		}
+	},
+	{
+		"riddle": "Corruption seeps from this stone but there are those who work to cleanse it. Lend your voice.",
+		"solution": "Completely use up a cleansing crystal on the Corrupted Seren Stone. Warning: If you click away early, the clue will not be completed and the cleansing crystal will be lost, forcing you to purchase another.",
+		"requirements": {
+			"quest": "Plague's End",
+			"skills": [
+				"N/A"
+			]
+		}
+	},
+	{
+		"riddle": "Crossing the desert I met a crocodile. She gave me a dazzling smile but she had something in her teeth.",
+		"solution": "Catch a plover bird in the southern part of Sophanem.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"73 Hunter"
+			]
+		}
+	},
+	{
+		"riddle": "Ernie once mentioned to me a secret to improve my cooking. His idea was strong but I went the extra mile.",
+		"solution": "Add a fire rune to a decorated cooking urn (nr).",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"81 Crafting"
+			]
+		}
+	},
+	{
+		"riddle": "Head protection is never a bad thing. Make it from rune for the best chance of survival.",
+		"solution": "Smith a rune helm or rune full helm.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"50 Smithing"
+			]
+		}
+	},
+	{
+		"riddle": "I have all the ingredients for soup but sometimes a simple meal tastes the best.",
+		"solution": "Cook a raw shark, raw rocktail, or raw sailfish.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"80 Cooking"
+			]
+		}
+	},
+	{
+		"riddle": "In a station of power someone requires assistance. Do a good deed to spread some happiness.",
+		"solution": "Help Turgall at the Dorgesh-Kaan Agility Course.  You'll want to bring a light source.",
+		"requirements": {
+			"quest": "Death to the Dorgeshuun",
+			"skills": [
+				"80 Agility"
+			]
+		}
+	},
+	{
+		"riddle": "I once met a man returning from market. He showed me the spoils of his day. It's precious to see what people pay for.",
+		"solution": "Steal from the Ardougne Gem Stall.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"75 Thieving"
+			]
+		}
+	},
+	{
+		"riddle": "I once met an ancient warrior who told me tales of his adventures. His eyes lit up as he spoke.",
+		"solution": "Burn some elder logs.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"90 Firemaking"
+			]
+		}
+	},
+	{
+		"riddle": "Keeping all your gold together. That's a good idea. It shall be mine.",
+		"solution": "Mine a concentrated gold deposit in the Living Rock Caverns.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"80 Mining"
+			]
+		}
+	},
+	{
+		"riddle": "Magical energy floats unleashed. The fluid of life that flows through us all. Span the gap to capture this energy.",
+		"solution": "Siphon some blood runes from a blood esswraith, blood pool, or bloody skulls in the Runespan.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"77 Runecrafting"
+			]
+		}
+	},
+	{
+		"riddle": "Round and round we go, burning, burning all aglow.",
+		"solution": "Burn a curly root in the Jadinko Lair. You must start a firepit, not just add to one.",
+		"requirements": {
+			"quest": "",
+			"skills": [
+				"83 Woodcutting, ",
+				"83 Firemaking"
+			]
+		}
+	},
+	{
+		"riddle": "Rowdy Unruly Boisterous I am pie.",
+		"solution": "Cook a wild pie or a wilder pie from their raw counterparts. (Some raw bear meat, raw chompy, raw rabbit, and a pie shell.) This must be done on a range outside of a POH. The Bake Pie spell does not work for this clue. A raw wild pie purchased from the grand exchange does work.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"85 Cooking"
+			]
+		}
+	},
+	{
+		"riddle": "Rumours of a great shark continue to spread. Catch me one and I will be fed.",
+		"solution": "Catch a raw great white shark. Can be fished at earlier levels at whirlpools.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"80 Fishing"
+			]
+		}
+	},
+	{
+		"riddle": "Stare into the flames for long enough and you may see something you didn't realise was there.",
+		"solution": "Light or add some magic logs onto a bonfire.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"75 Firemaking"
+			]
+		}
+	},
+	{
+		"riddle": "Take the journey to a distant mining site. Become a blight to your foes.",
+		"solution": "Smelt a bane bar at a furnace. Any type of bane bar will count. Superheating the bar does not count for this clue.",
+		"requirements": {
+			"quest": "Ritual of the Mahjarrat",
+			"skills": [
+				"77 Smithing, ",
+				"87 Magic"
+			]
+		}
+	},
+	{
+		"riddle": "The crystals tempt most however, there are other riches to gain for the quick-fingered.",
+		"solution": "Pickpocket any elf.",
+		"requirements": {
+			"quest": "Mourning's End Part I",
+			"skills": [
+				"85 Thieving"
+			]
+		}
+	},
+	{
+		"riddle": "The God of Order requires a sacrifice of strength but in return restores me. If only we could keep that feeling in his absence.",
+		"solution": "Create a Saradomin brew. (Mix a crushed bird nest into a toadflax potion.)",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"81 Herblore"
+			]
+		}
+	},
+	{
+		"riddle": "The spell struck me in the chest. Perhaps if I had worn armour today. Black looks better than red.",
+		"solution": "Craft a black dragonhide body.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"84 Crafting"
+			]
+		}
+	},
+	{
+		"riddle": "There are those who prove themselves and become a beacon of light in the darkness. Come to the crystal city and become that figure.",
+		"solution": "Use Light Form inside Prifddinas.",
+		"requirements": {
+			"quest": "The Light Within",
+			"skills": [
+				"80 Prayer"
+			]
+		}
+	},
+	{
+		"riddle": "There is a temple where there are rivers of red. Bind the magic to get ahead.",
+		"solution": "Craft some blood runes. This only works at the Blood Altar in Morytania, not the Ourania Runecrafting Altar.",
+		"requirements": {
+			"quest": "Legacy of Seergaze",
+			"skills": [
+				"77 Runecrafting"
+			]
+		}
+	},
+	{
+		"riddle": "Those things I once held dear continue to fade. I look upon her face and barely know who she is. But her eyes... They are still so radiant.",
+		"solution": "Harvest a radiant memory on Dragontooth Island.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"85 Divination"
+			]
+		}
+	},
+	{
+		"riddle": "When I encountered this individual, she had more rings than any I had seen before.",
+		"solution": "Cut some elder logs from an elder tree. The player-grown elder tree in Prifddinas works for this clue. Receiving elder logs from the polishing perk does not work.",
+		"requirements": {
+			"quest": "N/A",
+			"skills": [
+				"90 Woodcutting"
+			]
+		}
+	},
+	{
+		"riddle": "Where there is Light there is also Death. Should you contain this you may progress.",
+		"solution": "Craft some death runes. This only works at the Death Altar, not the Ourania Runecrafting Altar.",
+		"requirements": {
+			"quest": "Mourning's End PArt II",
+			"skills": [
+				"65 Runecrafting"
+			]
+		}
+	}
+]

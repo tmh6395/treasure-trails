@@ -1,0 +1,122 @@
+[
+	{
+		"location": "Ardougne",
+		"range": 22,
+		"image": "scan_ardougne.png"
+	},
+	{
+		"location": "Brimhaven Dungeon",
+		"range": 14,
+		"image": "scan_brimhaven.png"
+	},
+	{
+		"location": "Darkmeyer",
+		"range": 16,
+		"image": "scan_darkmeyer.png"
+	},
+	{
+		"location": "Dorgesh-Kaan",
+		"range": 16,
+		"image": "scan_dorgeshkaan.png"
+	},
+	{
+		"location": "Falador",
+		"range": 22,
+		"image": "scan_falador.png"
+	},
+	{
+		"location": "Fremennik Isles",
+		"range": 16,
+		"image": "scan_fremennik_isles.png"
+	},
+	{
+		"location": "Fremennik Slayer Dungeon",
+		"range": 16,
+		"image": "scan_fremennik_slayer_dungeon.png"
+	},
+	{
+		"location": "Haunted Woods",
+		"range": 11,
+		"image": "scan_haunted_woods.png"
+	},
+	{
+		"location": "The Heart of Gielinor",
+		"range": 49,
+		"image": "scan_heart_of_gielinor.png"
+	},
+	{
+		"location": "Elven Lands",
+		"range": 22,
+		"image": "scan_tirannwn.png"
+	},
+	{
+		"location": "The Islands That Once Were Turtles",
+		"range": 27,
+		"image": "scan_turtle_islands.png"
+	},
+	{
+		"location": "Keldagrim",
+		"range": 11,
+		"image": "scan_keldagrim.png"
+	},
+	{
+		"location": "Kharazi Jungle",
+		"range": 14,
+		"image": "scan_kharazi_jungle.png"
+	},
+	{
+		"location": "East Kharidian Desert",
+		"range": 27,
+		"image": "scan_kharidian_desert.png"
+	},
+	{
+		"location": "Lumbridge Swamp Caves",
+		"range": 11,
+		"image": "scan_lumbridge_swamp_caves.png"
+	},
+	{
+		"location": "Menaphos",
+		"range": 30,
+		"image": "scan_menaphos.png"
+	},
+	{
+		"location": "Mos Le'Harmless",
+		"range": 27,
+		"image": "scan_mos_leharmless.png"
+	},
+	{
+		"location": "Piscatoris Hunter Area",
+		"range": 14,
+		"image": "scan_piscatoris.png"
+	},
+	{
+		"location": "Prifddinas",
+		"range": 30,
+		"image": "scan_prifddinas.png"
+	},
+	{
+		"location": "Taverley Dungeon",
+		"range": 22,
+		"image": "scan_taverley_dungeon.png"
+	},
+	{
+		"location": "Varrock and the Grand Exchange",
+		"range": 16,
+		"image": "scan_varrock.png"
+	},
+	{
+		"location": "Deep Wilderness",
+		"range": 25,
+		"image": "scan_wilderness_deep.png"
+	},
+	{
+		"location": "Wilderness Volcano",
+		"range": 11,
+		"image": "scan_wilderness_volcano.png"
+	},
+	{
+		"location": "Zanaris",
+		"range": 16,
+		"image": "scan_zanaris.png"
+	}
+]
