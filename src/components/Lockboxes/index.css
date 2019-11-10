@@ -1,0 +1,11 @@
+.div-lockboxes{
+	/* display: inline-block; */
+}
+
+#lockbox-unsolved{
+	display: "block";
+}
+
+#lockbox-solved{
+	display: "none";
+}

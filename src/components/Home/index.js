@@ -1,64 +1,158 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class Home extends Component {
 	render() {
 		return (<>
-			<div className="main-design" style={{ backgroundColor: "#172136" }}>
+			<div id="main-design">
+				<Row className="main-row-links">
+					<Col xs={2}></Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/anagrams"}>
+							<p className="main-menu-options">Anagrams</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/challenges"}>
+							<p className="main-menu-options">Challenges</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/coordinates"}>
+							<p className="main-menu-options">Coordinates</p>
+						</Link>
+					</Col>
+					<Col xs={2}></Col>
+				</Row>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/anagrams"}>
-					<p>Anagrams</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/challenges"}>
-					<p>Challenges</p>
-				</Link>
+				<Row className="main-row-links">
+					<Col xs={2}></Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/cryptics"}>
+							<p className="main-menu-options">Cryptics</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/lockboxes"}>
+							<p className="main-menu-options">Lockboxes</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/maps"}>
+							<p className="main-menu-options">Maps</p>
+						</Link>
+					</Col>
+					<Col xs={2}></Col>
+				</Row>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/coordinates"}>
-					<p>Coordinates</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/cryptics"}>
-					<p>Cryptics</p>
-				</Link>
+				<Row className="main-row-links">
+					<Col xs={2}></Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/puzzleboxguide"}>
+							<p className="main-menu-options">Puzzle Box Guide</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/scans"}>
+							<p className="main-menu-options">Scans</p>
+						</Link>
+					</Col>
+					<Col>
+						<Link
+							to={"/treasure-trails-helper/skillingriddles"}>
+							<p className="main-menu-options">Skilling Riddles</p>
+						</Link>
+					</Col>
+					<Col xs={2}></Col>
+				</Row>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/lockboxes"}>
-					<p>Lockboxes</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/maps"}>
-					<p>Maps</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/puzzleboxguide"}>
-					<p>Puzzle Box Guide</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/scans"}>
-					<p>Scans</p>
-				</Link>
 
-				<Link
-					className="main-menu-options"
-					to={"/treasure-trails-helper/skillingriddles"}>
-					<p>Skilling Riddles</p>
-				</Link>
+
+
+
+				{/* 				
+				<Row style={{ height: "100%" }}>
+					<Col>
+						<Col xs={1}></Col>
+						<Col className="main-column">
+							<Link
+								to={"/treasure-trails-helper/anagrams"}>
+								<p className="main-menu-options">Anagrams</p>
+							</Link>
+
+							<Link
+								to={"/treasure-trails-helper/challenges"}>
+								<p className="main-menu-options">Challenges</p>
+							</Link>
+
+							<Link
+								to={"/treasure-trails-helper/coordinates"}>
+								<p className="main-menu-options">Coordinates</p>
+							</Link>
+						</Col>
+					</Col>
+				</Row> */}
+
+
+				{/* 
+				<Row style={{ height: "100%" }}>
+					<Col xs={1}></Col>
+					<Col className="main-column">
+						<Link
+							to={"/treasure-trails-helper/cryptics"}>
+							<p className="main-menu-options">Cryptics</p>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/lockboxes"}>
+							<p className="main-menu-options">Lockboxes</p>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/maps"}>
+							<p className="main-menu-options">Maps</p>
+						</Link>
+					</Col>
+				</Row>
+
+
+
+
+				<Row style={{ height: "100%" }}>
+					<Col xs={1}></Col>
+					<Col className="main-column">
+						<Link
+							to={"/treasure-trails-helper/puzzleboxguide"}>
+							<p className="main-menu-options">Puzzle Box Guide</p>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/scans"}>
+							<p className="main-menu-options">Scans</p>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/skillingriddles"}>
+							<p className="main-menu-options">Skilling Riddles</p>
+						</Link>
+					</Col>
+					<Col xs={1}></Col>
+				</Row> */}
 
 				{/* Simple solution for pages where #btn-to-top doesn't exist, so the scrollFunction doesn't cry "error!" */}
 				<span id="btn-to-top"></span>

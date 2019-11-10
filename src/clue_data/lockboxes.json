@@ -1,0 +1,42 @@
+[
+	{
+		"number": "lockbox1",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox1_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox1_solution.png"
+	},
+	{
+		"number": "lockbox2",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox2_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox2_solution.png"
+	},
+	{
+		"number": "lockbox3",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox3_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox3_solution.png"
+	},
+	{
+		"number": "lockbox4",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox4_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox4_solution.png"
+	},
+	{
+		"number": "lockbox5",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox5_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox5_solution.png"
+	},
+	{
+		"number": "lockbox6",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox6_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox6_solution.png"
+	},
+	{
+		"number": "lockbox7",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox7_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox7_solution.png"
+	},
+	{
+		"number": "lockbox8",
+		"unsolved": "/images/lockboxes/300px-Lockbox_example_lockbox8_unsolved.png",
+		"solution": "/images/lockboxes/300px-Lockbox_example_lockbox8_solution.png"
+	}
+]

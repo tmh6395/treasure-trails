@@ -69,7 +69,7 @@ class App extends Component {
 						{ChallengeData.map((challenge, index) => {
 							if (challenge.question.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<h1><span>Challenges:</span> {challenge.question}</h1>
+									<h1><span>Challenge:</span> {challenge.question}</h1>
 									<p><span>Solution:</span> {challenge.answer}</p>
 									<p><span>Asked by:</span> {challenge.asker}</p>
 								</div>
@@ -85,8 +85,8 @@ class App extends Component {
 				<Row>
 					<Col xs={1}></Col>
 					<Col xs={1}>
-						<button id="btn-to-top">
-							<Link to={"#"} id="link-to-top" onClick={() => window.scrollTo(0, 0)}>
+						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
+							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />
 							</Link>
 						</button>

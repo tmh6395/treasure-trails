@@ -68,7 +68,7 @@ class App extends Component {
 						{AnagramData.map((anagram, index) => {
 							if (anagram.question.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<h1><span>Anagrams:</span> {anagram.question}</h1>
+									<h1><span>Anagram:</span> {anagram.question}</h1>
 									<p><span>Solution:</span> {anagram.answer}</p>
 									<p><span>Location:</span> {anagram.location}</p>
 									<p><span>Challenge (if applicable):</span> {anagram.challenge}</p>
@@ -85,8 +85,8 @@ class App extends Component {
 				<Row>
 					<Col xs={1}></Col>
 					<Col xs={1}>
-						<button id="btn-to-top">
-							<Link to={"#"} id="link-to-top" onClick={() => window.scrollTo(0, 0)}>
+						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
+							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />
 							</Link>
 						</button>

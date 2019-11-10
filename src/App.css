@@ -1,8 +1,8 @@
 /* ************************************ CSS FOR APP.JS BELOW ************************************ */
 
-html, body{
+html, body, #root, #main-row-routes, #main-design{
 	min-height: 100%;
-	background-color: #253f74;
+	/* background-color: #253f74; */
 	background-color: #313e59;
 	height: 100%;
 }
@@ -20,12 +20,11 @@ html{
   padding: 0;
 }
 
-#main-row{
+#main-row-routes{
 	background-color: #313e59;
 }
 
 p, h1, h2, h3 {
-	color: rgb(240, 240, 100);
 	color: #cbd9f4;
 	font-family: Helvetica;
 	/* text-shadow:
@@ -43,6 +42,26 @@ span{
 
 /* ************************************ CSS FOR COMPONENTS BELOW ************************************ */
 
+#main-design{
+	background-color: #172136;
+	padding-top: 10%;
+}
+
+.main-row-links{
+	font-size: 2rem;
+}
+
+.main-menu-options{
+	text-align: center;
+	padding: 2rem;
+	margin: 1rem;
+	/* border: 2px solid rgb(240, 240, 100); */
+}
+.main-menu-options:hover{
+	background-color: #313e59;
+	border-radius: 50%;
+}
+
 
 #search-form{
 	background-color: #071022;
@@ -51,6 +70,7 @@ span{
 #search-bar{
 	font-size: 2rem;
 	width: inherit;
+	padding-left: 0.5rem;
 }
 
 .results{
@@ -58,6 +78,10 @@ span{
 	padding: 2rem;
 	margin: 1rem;
 	font-size: calc(5px + 2vmin);
+}
+
+img{
+	color: #cbd9f4;
 }
 
 #btn-to-home, #link-to-home, #btn-to-top, #link-to-top{
@@ -71,6 +95,18 @@ span{
 
 #btn-to-home, #link-to-home{
 	width: min-content;
+}
+
+#btn-help-column{
+	align-self: center;
+}
+
+#btn-help{
+	border-radius: 50%;
+	border: none;
+	height: 75px;
+	width: 75px;
+	font-size: 20pt;
 }
 
 #btn-to-top, #link-to-top{
@@ -88,6 +124,11 @@ span{
 	margin: 1rem;
 }
 
-.btn-to-home:active, .btn-to-home:focus, .btn-to-top:active, .btn-to-top:focus{
+.btn-to-home:active, .btn-to-home:focus, .btn-to-top:active, .btn-to-top:focus, #btn-help:active, #btn-help:focus{
 	outline: 0;
+}
+
+hr{
+	background-color: #cbd9f4;
+	margin-top: 0;
 }

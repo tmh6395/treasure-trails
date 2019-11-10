@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Row id="main-row">
+        <Row id="main-row-routes">
           <Col>
             <Switch>
               <Route exact path="/treasure-trails-helper" component={Home} />
