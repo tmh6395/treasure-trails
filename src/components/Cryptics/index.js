@@ -73,7 +73,7 @@ class App extends Component {
 							if (windowOrigin === 'http://localhost:3000') {
 								windowOrigin = '';
 							} else if (windowOrigin === 'https://tmh6395.github.io') {
-								windowOrigin = '/treasure-trails';
+								windowOrigin = '/treasure-trails-helper';
 							}
 
 							if (cryptic.keyInfo === "N/A") {

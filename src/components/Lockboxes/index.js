@@ -39,7 +39,7 @@ class App extends Component {
 		if (windowOrigin === 'http://localhost:3000') {
 			windowOrigin = '';
 		} else if (windowOrigin === 'https://tmh6395.github.io') {
-			windowOrigin = '/treasure-trails';
+			windowOrigin = '/treasure-trails-helper';
 		}
 
 		let lockboxImage = document.getElementById(lockboxId);
@@ -69,11 +69,11 @@ class App extends Component {
 
 		let windowOrigin = window.location.origin;
 		// Allows the images to load whether the app is loaded locally or on gh-pages
-		// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
+		// gh-pages needs '/treasure-trails-helper' to properly follow the path, but locally needs nothing in its place
 		if (windowOrigin === 'http://localhost:3000') {
 			windowOrigin = '';
 		} else if (windowOrigin === 'https://tmh6395.github.io') {
-			windowOrigin = '/treasure-trails';
+			windowOrigin = '/treasure-trails-helper';
 		}
 
 		let status = "unsolved";
@@ -100,7 +100,7 @@ class App extends Component {
 							<hr />
 							<p>1. Starting in the second row, click the tiles to change all of the tiles in the first row to be the same icon.</p>
 							<p>2. Repeat this for each row, to change the row above it, until all of the tiles are the same icon except in the last row.</p>
-							<p>3. Match your pattern to one of the patterns below, then click on it.  Remember the order: Melee > Range > Magic > Melee.</p>
+							<p>3. Match your pattern to one of the patterns below, then click on it.  Remember the order: Melee > Range > Magic ></p>
 							<p>4. Starting from the top, click each tile a number of times equal to the number on said tile.</p>
 						</div>
 					</Col>
@@ -122,7 +122,7 @@ class App extends Component {
 							if (windowOrigin === 'http://localhost:3000') {
 								windowOrigin = '';
 							} else if (windowOrigin === 'https://tmh6395.github.io') {
-								windowOrigin = '/treasure-trails';
+								windowOrigin = '/treasure-trails-helper';
 							}
 
 							return (<>
