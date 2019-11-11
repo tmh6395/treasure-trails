@@ -69,7 +69,7 @@ span{
 
 #search-bar{
 	font-size: 2rem;
-	width: inherit;
+	width: 100%;
 	padding-left: 0.5rem;
 }
 
@@ -97,7 +97,7 @@ img{
 	width: min-content;
 }
 
-#btn-help-column{
+#btn-help-column, #lockbox-basic-text{
 	align-self: center;
 }
 
@@ -131,4 +131,12 @@ img{
 hr{
 	background-color: #cbd9f4;
 	margin-top: 0;
+}
+
+#lockbox-unsolved{
+	display: "block";
+}
+
+#lockbox-solved{
+	display: "none";
 }

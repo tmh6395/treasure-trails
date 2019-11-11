@@ -61,9 +61,9 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col></Col>
+					{/* <Col></Col> */}
 
-					<Col xs={7} id="result-container">
+					<Col xs={12} lg={9} xl={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{AnagramData.map((anagram, index) => {
 							if (anagram.question.toLowerCase().includes(this.state.query.toLowerCase())) {
@@ -77,7 +77,7 @@ class App extends Component {
 						})}
 					</Col>
 
-					<Col></Col>
+					{/* <Col></Col> */}
 				</Row>
 			</div>
 

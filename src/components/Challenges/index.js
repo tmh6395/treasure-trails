@@ -64,7 +64,7 @@ class App extends Component {
 				<Row>
 					<Col></Col>
 
-					<Col xs={7} id="result-container">
+					<Col xs={12} lg={9} xl={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{ChallengeData.map((challenge, index) => {
 							if (challenge.question.toLowerCase().includes(this.state.query.toLowerCase())) {

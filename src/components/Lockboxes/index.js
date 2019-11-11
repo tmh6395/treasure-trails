@@ -55,17 +55,7 @@ class App extends Component {
 		}
 	}
 
-
-
 	render() {
-		let styleShow = {
-			display: "block",
-		}
-
-		let styleHide = {
-			display: "none",
-		}
-
 
 		let windowOrigin = window.location.origin;
 		// Allows the images to load whether the app is loaded locally or on gh-pages
@@ -88,7 +78,7 @@ class App extends Component {
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col xs={8}></Col>
+					<Col xs={8} id="lockbox-basic-text"><h3>Click on an image to see its solution.  Click the help button for extra help.</h3></Col>
 					<Col id="btn-help-column">
 						<button id="btn-help" onClick={this.toggleDirections}>Help</button>
 					</Col>
@@ -131,7 +121,6 @@ class App extends Component {
 									<img
 										id={lockbox.number}
 										alt="lockbox_image_failed_to_load"
-										style={styleShow}
 										onClick={this.switchImage.bind(this, lockbox.number)}
 										src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
 									/>
