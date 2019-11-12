@@ -102,7 +102,7 @@ class App extends Component {
 				<Row>
 					<Col></Col>
 
-					<Col xs={7} id="result-container">
+					<Col xs={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
 
@@ -128,34 +128,14 @@ class App extends Component {
 							</>)
 
 						})}
-
-						{/* src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_solution.png"} */}
-
-						{/* <div style={{ display: "flex" }}> */}
-						{/* </div> */}
-
-
-
-
-
 					</Col>
 
 					<Col></Col>
-				</Row>
-			</div>
 
-			{/* <div>
-				<Row>
-					<Col xs={1}></Col>
-					<Col xs={1}>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
 				</Row>
-			</div> */}
+				{/* Simple solution for pages where #btn-to-top doesn't exist, so the scrollFunction doesn't cry "error!" */}
+				<span id="btn-to-top"></span>
+			</div>
 		</>);
 	}
 }

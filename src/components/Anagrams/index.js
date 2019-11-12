@@ -23,9 +23,6 @@ class App extends Component {
 	}
 
 	render() {
-		// // Used to disallow submitting searches
-		// this.formPreventDefault = this.formPreventDefault.bind(this);
-
 
 		window.onscroll = () => {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -39,13 +36,13 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row>
-					<Col xs={1}></Col>
+					<Col xs={12} lg={9} xl={8}></Col>
 					<Col xs={1}>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col xs={8}></Col>
+					<Col></Col>
 					<Col xs={2} style={{ alignSelf: "center" }}>
 						{/* the searchbar */}
 						<input
@@ -61,8 +58,6 @@ class App extends Component {
 
 			<div>
 				<Row>
-					{/* <Col></Col> */}
-
 					<Col xs={12} lg={9} xl={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{AnagramData.map((anagram, index) => {
@@ -77,14 +72,57 @@ class App extends Component {
 						})}
 					</Col>
 
-					{/* <Col></Col> */}
+					<Col></Col>
+
+					{/* side menu links */}
+					<Col xl={2} id="side-design">
+						<Link
+							to={"/treasure-trails-helper/challenges"}>
+							<h3 className="side-menu-options">Challenges</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/coordinates"}>
+							<h3 className="side-menu-options">Coordinates</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/cryptics"}>
+							<h3 className="side-menu-options">Cryptics</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/lockboxes"}>
+							<h3 className="side-menu-options">Lockboxes</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/maps"}>
+							<h3 className="side-menu-options">Maps</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/puzzleboxguide"}>
+							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/scans"}>
+							<h3 className="side-menu-options">Scans</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/skillingriddles"}>
+							<h3 className="side-menu-options">Skilling Riddles</h3>
+						</Link>
+					</Col>
 				</Row>
 			</div>
 
 			<div>
 				<Row>
-					<Col xs={1}></Col>
-					<Col xs={1}>
+					<Col xl={8}></Col>
+					<Col xl={1}>
 						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
 							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />

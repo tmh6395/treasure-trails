@@ -62,15 +62,41 @@ span{
 	border-radius: 50%;
 }
 
+#side-design{
+	background-color: #172136;
+	position: fixed;
+	right: 0;
+	height: min-content;
+	margin: 1rem 2rem 0 0;
+	border-radius: 10px;
+	/* text-align: center; */
+}
+
+
+.side-menu-options{
+	text-align: right;
+	padding: 1rem;
+	margin: 1rem;
+}
+.side-menu-options:hover{
+	background-color: #313e59;
+	border-radius: 10px;
+}
+
+#search-form, .side-design{
+	position: static;
+}
 
 #search-form{
 	background-color: #071022;
+	/* padding: 1rem 0; */
 }
 
 #search-bar{
 	font-size: 2rem;
 	width: 100%;
 	padding-left: 0.5rem;
+	margin-left: -2rem;
 }
 
 .results{
@@ -78,6 +104,7 @@ span{
 	padding: 2rem;
 	margin: 1rem;
 	font-size: calc(5px + 2vmin);
+	border-radius: 10px;
 }
 
 img{
