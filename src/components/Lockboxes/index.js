@@ -100,9 +100,7 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col></Col>
-
-					<Col xs={9} id="result-container">
+					<Col lg={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
 
@@ -131,6 +129,49 @@ class App extends Component {
 					</Col>
 
 					<Col></Col>
+
+					{/* side menu links */}
+					<Col xl={2} lg={3} id="side-design">
+						<Link
+							to={"/treasure-trails-helper/anagrams"}>
+							<h3 className="side-menu-options">Anagrams</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/challenges"}>
+							<h3 className="side-menu-options">Challenges</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/coordinates"}>
+							<h3 className="side-menu-options">Coordinates</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/cryptics"}>
+							<h3 className="side-menu-options">Cryptics</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/maps"}>
+							<h3 className="side-menu-options">Maps</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/puzzleboxguide"}>
+							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/scans"}>
+							<h3 className="side-menu-options">Scans</h3>
+						</Link>
+
+						<Link
+							to={"/treasure-trails-helper/skillingriddles"}>
+							<h3 className="side-menu-options">Skilling Riddles</h3>
+						</Link>
+					</Col>
 
 				</Row>
 				{/* Simple solution for pages where #btn-to-top doesn't exist, so the scrollFunction doesn't cry "error!" */}

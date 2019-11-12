@@ -58,7 +58,7 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={9} xl={7} id="result-container">
+					<Col xs={12} lg={8} xl={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{AnagramData.map((anagram, index) => {
 							if (anagram.question.toLowerCase().includes(this.state.query.toLowerCase())) {
@@ -72,10 +72,10 @@ class App extends Component {
 						})}
 					</Col>
 
-					<Col></Col>
+					{/* <Col></Col> */}
 
 					{/* side menu links */}
-					<Col xl={2} id="side-design">
+					<Col lg={3} xl={2} id="side-design">
 						<Link
 							to={"/treasure-trails-helper/challenges"}>
 							<h3 className="side-menu-options">Challenges</h3>
