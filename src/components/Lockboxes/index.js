@@ -103,7 +103,6 @@ class App extends Component {
 					<Col lg={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
-
 							let windowOrigin = window.location.origin;
 							// Allows the images to load whether the app is loaded locally or on gh-pages
 							// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
@@ -113,17 +112,15 @@ class App extends Component {
 								windowOrigin = '/treasure-trails-helper';
 							}
 
-							return (<>
-								<div className="div-lockboxes" style={{ display: "inline-block", margin: "auto", padding: "1rem" }}>
-									<h2 className="text-lockbox-patterns">Lockbox Pattern {index + 1}</h2>
-									<img
-										id={lockbox.number}
-										alt="lockbox_image_failed_to_load"
-										onClick={this.switchImage.bind(this, lockbox.number)}
-										src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
-									/>
-								</div>
-							</>)
+							return (<div key={index} className="div-lockboxes" style={{ display: "inline-block", margin: "auto", padding: "1rem" }}>
+								<h2 className="text-lockbox-patterns">Lockbox Pattern {index + 1}</h2>
+								<img
+									id={lockbox.number}
+									alt="lockbox_image_failed_to_load"
+									onClick={this.switchImage.bind(this, lockbox.number)}
+									src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
+								/>
+							</div>)
 
 						})}
 					</Col>
@@ -132,6 +129,13 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col xl={2} lg={3} id="side-design">
+						<Link
+							to={"/treasure-trails-helper"}>
+							<h3 className="side-menu-options">Home</h3>
+						</Link>
+
+						<hr />
+
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>
 							<h3 className="side-menu-options">Anagrams</h3>

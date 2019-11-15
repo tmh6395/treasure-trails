@@ -1,127 +1,152 @@
 [
 	{
 		"location": "Stacked behind the Clock tower building south of Ardougne Castle.",
+		"keyword": "Clock_Tower",
 		"clueMap": "Map_clue_Clock_Tower.png",
 		"worldMap": "800px-Map_clue_location_Clock_Tower.png"
 	},
 	{
 		"location": "Inside McGrubor's Wood, west of Seers' Village.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "McGrubor's_Wood",
+		"clueMap": "Map_clue_McGrubor's_Wood.png",
+		"worldMap": "800px-Map_clue_location_McGrubor's_Wood.png"
 	},
 	{
 		"location": "In level 14 Wilderness, at the Dark Warriors' Fortress, search the pile of crates in the south-west corner of the central courtyard.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Dark_Warriors'_Fortress",
+		"clueMap": "Map_clue_Dark_Warriors'_Fortress.png",
+		"worldMap": "800px-Map_clue_location_Dark_Warriors'_Fortress.png"
 	},
 	{
 		"location": "North-east of the Observatory, north of Castle Wars, south of Ourania Runecrafting Altar. There are three buildings that have been destroyed by goblins; search the crate in the western-most building.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Observatory",
+		"clueMap": "Map_clue_Observatory.png",
+		"worldMap": "800px-Map_clue_location_Observatory.png"
 	},
 	{
 		"location": "Northeast of Varrock, at the Lumber Yard. To enter the yard, squeeze-under the hole in the fence on the west wall. Search the crate indicated.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Lumberyard",
+		"clueMap": "Map_clue_Lumberyard.png",
+		"worldMap": "800px-Map_clue_location_Lumberyard.png"
 	},
 	{
 		"location": "The Chaos Altar north of the Observatory, the entrance to the Ourania Runecrafting Altar.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Ourania_chaos_altar",
+		"clueMap": "Map_clue_Ourania_chaos_altar.png",
+		"worldMap": "800px-Map_clue_location_Ourania_chaos_altar.png"
 	},
 	{
 		"location": "Just south of the Wizards' Tower, south of Draynor Village. Dig just east of the large rock.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Wizards'_Tower",
+		"clueMap": "Map_clue_Wizards'_Tower.png",
+		"worldMap": "800px-Map_clue_location_Wizards'_Tower.png"
 	},
 	{
 		"location": "Brother Galahad's house. Across the river from the coal trucks, west of Seers' Village.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Brother_Galahad's_house",
+		"clueMap": "Map_clue_Brother_Galahad's_house.png",
+		"worldMap": "800px-Map_clue_location_Brother_Galahad's_house.png"
 	},
 	{
 		"location": "Just west of the chemist's house in Rimmington. South of Falador, west of Port Sarim.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Chemist's_house",
+		"clueMap": "Map_clue_Chemist's_house.png",
+		"worldMap": "800px-Map_clue_location_Chemist's_house.png"
 	},
 	{
 		"location": "On Miscellania, one of the Fremennik Isles, just east of the castle.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Miscellania",
+		"clueMap": "Map_clue_Miscellania.png",
+		"worldMap": "800px-Map_clue_location_Miscellania.png"
 	},
 	{
 		"location": "In West Ardougne, dig inside one of the destroyed buildings. It is in the northwest corner of the most eastern of the three destroyed housing buildings in the southwest area of West Ardougne.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "West_Ardougne",
+		"clueMap": "Map_clue_West_Ardougne.png",
+		"worldMap": "800px-Map_clue_location_West_Ardougne.png"
 	},
 	{
 		"location": "South of Yanille bank. Behind the house with an anvil. It is right next to the 'Mod Timbo Tree'. You can dig inside of the building next to the tree.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Yanille_anvil",
+		"clueMap": "Map_clue_Yanille_anvil.png",
+		"worldMap": "800px-Map_clue_location_Yanille_anvil.png"
 	},
 	{
 		"location": "Just south of East Ardougne, north of the Tower of Life, near the Necromancer's tower. Dig 2 spaces north of the smaller crate that Bonafido is leaning on.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Tower_of_Life",
+		"clueMap": "Map_clue_Tower_of_Life.png",
+		"worldMap": "800px-Map_clue_location_Tower_of_Life.png"
 	},
 	{
 		"location": "Start on the east side of the eastern most Magic tree east of the Ranging Guild and follow the coordinates on the map.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "East_of_Range_Guild",
+		"clueMap": "Map_clue_East_of_Range_Guild.png",
+		"worldMap": "800px-Map_clue_location_East_of_Range_Guild.png"
 	},
 	{
 		"location": "North of Falador's walls next to gamer's Grotto inside the enclosure with oddly marked stones with no known purpose. Dig in between one of the large stones and the tree on the east side.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Falador_stones",
+		"clueMap": "Map_clue_Falador_stones.png",
+		"worldMap": "800px-Map_clue_location_Falador_stones.png"
 	},
 	{
 		"location": "South-west of Varrock, west of the Champions' Guild, and south-west of the Varrock South-West mine.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Varrock_west_mine",
+		"clueMap": "Map_clue_Varrock_west_mine.png",
+		"worldMap": "800px-Map_clue_location_Varrock_west_mine.png"
 	},
 	{
 		"location": "Just north of Falador, at the crossroads where there is a statue.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Falador_statue_crossroads",
+		"clueMap": "Map_clue_Falador_statue_crossroads.png",
+		"worldMap": "800px-Map_clue_location_Falador_statue_crossroads.png"
 	},
 	{
 		"location": "South of Varrock, near the eastern mining spot. Note: With the recent Mining and Smithing rework the map clue is inaccurate. The dig spot is however still at the location of the reference image.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Varrock_east_mine",
+		"clueMap": "Map_clue_Varrock_east_mine.png",
+		"worldMap": "800px-Map_clue_location_Varrock_east_mine.png"
 	},
 	{
 		"location": "On the road between Seers' Village and Rellekka. The two trees indicated on the map are oak trees, just south of the Musician. Dig in the spot indicated, just west of the fern (or on the fern, if this does not work).",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Seers'_to_Rellekka_road",
+		"clueMap": "Map_clue_Seers'_to_Rellekka_road.png",
+		"worldMap": "800px-Map_clue_location_Seers'_to_Rellekka_road.png"
 	},
 	{
 		"location": "Hobgoblin Peninsula, west of the Crafting Guild; dig next to the 2nd spawn of snape grass, counting from the end of the peninsula.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Hobgoblin_peninsula",
+		"clueMap": "Map_clue_Hobgoblin_peninsula.png",
+		"worldMap": "800px-Map_clue_location_Hobgoblin_peninsula.png"
 	},
 	{
 		"location": "South of the Legends' Guild, north-east of East Ardougne, next to the benches near the Legends' Guild south-west mine.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Legends'_Guild",
+		"clueMap": "Map_clue_Legends'_Guild.png",
+		"worldMap": "800px-Map_clue_location_Legends'_Guild.png"
 	},
 	{
 		"location": "Located in level 50 Wilderness, near the Wilderness Agility Course; south-west of Deep Wilderness Dungeon entrance and west of the Mage Arena; dig between the three small volcanoes.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "small_volcanoes",
+		"clueMap": "Map_clue_small_volcanoes.png",
+		"worldMap": "800px-Map_clue_location_small_volcanoes.png"
 	},
 	{
 		"location": "Road between Rellekka and the Lighthouse.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Lighthouse_peninsula",
+		"clueMap": "Map_clue_Lighthouse_peninsula.png",
+		"worldMap": "800px-Map_clue_location_Lighthouse_peninsula.png"
 	},
 	{
 		"location": "South of Draynor Village bank, by the fishing spot, slightly north of the small obelisk.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Draynor",
+		"clueMap": "Map_clue_Draynor.png",
+		"worldMap": "800px-Map_clue_location_Draynor.png"
 	},
 	{
 		"location": "North of the Abandoned Mine, by the path to Mort'ton.",
-		"clueMap": "",
-		"worldMap": ""
+		"keyword": "Haunted_Mine",
+		"clueMap": "Map_clue_Haunted_Mine.png",
+		"worldMap": "800px-Map_clue_location_Haunted_Mine.png"
 	}
 ]
