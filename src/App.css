@@ -27,11 +27,15 @@ html{
 p, h1, h2, h3 {
 	color: #cbd9f4;
 	font-family: Helvetica;
-	/* text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000; */
+}
+
+p{
+	font-size: 16pt;
+}
+
+.question-text{
+	font-size: 24pt;
+	margin-bottom: 0;
 }
 
 span{
@@ -41,6 +45,7 @@ span{
 
 
 /* ************************************ CSS FOR COMPONENTS BELOW ************************************ */
+
 
 #main-design{
 	background-color: #172136;
@@ -55,7 +60,6 @@ span{
 	text-align: center;
 	padding: 2rem;
 	margin: 1rem;
-	/* border: 2px solid rgb(240, 240, 100); */
 }
 .main-menu-options:hover{
 	background-color: #313e59;
@@ -91,12 +95,20 @@ span{
 	font-size: 2rem;
 	width: 100%;
 	padding-left: 0.5rem;
-	margin-left: -2rem;
+	margin-left: -1rem;
+}
+
+.header-row{
+	min-height: inherit;
+}
+
+.align-self-center{
+	align-self: center;
 }
 
 .results{
 	background-color: #172136;
-	padding: 2rem;
+	padding: 1rem 2rem;
 	margin: 1rem;
 	font-size: calc(5px + 2vmin);
 	border-radius: 10px;
@@ -104,6 +116,11 @@ span{
 
 img{
 	color: #cbd9f4;
+	max-width: 100%;
+}
+
+#btn-to-home{
+	margin-left: 2rem;
 }
 
 #btn-to-home, #link-to-home, #btn-to-top, #link-to-top{
@@ -119,16 +136,8 @@ img{
 	width: min-content;
 }
 
-#btn-help-column, #lockbox-basic-text{
+#lockbox-basic-text{
 	align-self: center;
-}
-
-#btn-help{
-	border-radius: 50%;
-	border: none;
-	height: 75px;
-	width: 75px;
-	font-size: 20pt;
 }
 
 #btn-to-top, #link-to-top{
@@ -139,21 +148,32 @@ img{
 #btn-to-top{
 	position: fixed;
 	display: none;
-	font-size: 4rem;
+	font-size: 2rem;
+	opacity: 80%;
 	bottom: 2rem;
-	opacity: 75%;
 }
 
 #link-to-top{
 	margin: 1rem;
 }
 
-.btn-to-home:active, .btn-to-home:focus, .btn-to-top:active, .btn-to-top:focus, #btn-help:active, #btn-help:focus{
+.btn-to-home:active, .btn-to-home:focus, .btn-to-top:active, .btn-to-top:focus{
 	outline: 0;
 }
 
 hr{
 	background-color: #cbd9f4;
+	margin: 0 1rem;
+}
+
+#cryptic-tip-header{
+	margin-bottom: 0;
+	align-self: center;
+}
+
+#cryptic-tip-below-header{
+	margin-bottom: 0;
+	display: none;
 }
 
 #lockbox-unsolved{
@@ -164,16 +184,20 @@ hr{
 	display: "none";
 }
 
+.map-results{
+	margin: 1rem auto;
+}
+
 @media only screen and (min-width: 1025px){
-	/* #btn-to-home{
-		display: none;
-	} */
-	/* #search-bar{
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	} */
-	#map-results{
+	.map-results{
 		margin: 1rem auto;
+	}
+}
+
+@media only screen and (min-width: 2560px){
+	.side-menu-options{
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 }
 
@@ -181,10 +205,52 @@ hr{
 	#side-design{
 		display: none;
 	}
+	#btn-to-top{
+		right: 1rem;
+		bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width: 769px){
+	#search-form{
+		min-height: 98px;
+	}
+	#btn-to-home{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 768px){
-	#map-results{
+	.div-lockboxes{
+		margin: 1rem;
+	}
+	.map-results{
 		margin: 1rem auto;
 	}
+	#btn-to-top{
+		right: 0;
+		bottom: 0;
+	}
+	#cryptic-tip-header, #hide-when-medium{
+		display: none;
+	}
+	#cryptic-tip-below-header{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	p{
+		font-size: 11pt;
+	}
+	.question-text{
+		font-size: 16pt;
+	}
+	.cryptic-question-text{
+		font-size: 12pt;
+	}
+	.div-lockboxes{
+		margin: 0 1rem;
+	}
+
 }

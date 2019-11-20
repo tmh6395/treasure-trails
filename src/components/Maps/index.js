@@ -45,16 +45,6 @@ class App extends Component {
 
 	render() {
 
-		let mapImageShow = {
-			width: "100%",
-			// display: "inline-block",
-		}
-
-		let mapImageHide = {
-			width: "100%",
-			display: "none",
-		}
-
 		window.onscroll = () => {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				document.getElementById("btn-to-top").style.display = "block";
@@ -67,8 +57,8 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row>
-					<Col xs={1}></Col>
-					<Col xs={4} lg={7} xl={9}>
+					{/* <Col></Col> */}
+					<Col xs={1}>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
@@ -78,14 +68,12 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={10} id="result-container">
+					<Col xs={12} lg={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						<Row>
 							{MapData.map((map, index) => {
 								map.key = index;
 
-								let mapImage = map.clueMap;
-								let worldImage = map.worldMap;
 								let windowOrigin = window.location.origin;
 								// Allows the images to load whether the app is loaded locally or on gh-pages
 								// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
@@ -96,11 +84,10 @@ class App extends Component {
 								}
 								console.log("qwerty map.keyword:", map.keyword)
 
-								return (<Col md={5} lg={4} xl={5} key={index} className="results" id="map-results">
+								return (<Col md={5} key={index} className="results map-results">
 									<img
 										id={map.keyword}
 										alt="map_image_failed_to_load"
-										style={mapImageShow}
 										onClick={this.mapImageSwap.bind(this, map.keyword)}
 										src={window.location.origin + windowOrigin + "/images/maps_locations/Map_clue_" + map.keyword + ".png"} />
 									<p>{map.location}</p>
@@ -109,55 +96,55 @@ class App extends Component {
 						</Row>
 					</Col>
 
-					{/* <Col></Col> */}
+					<Col></Col>
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
 						<Link
 							to={"/treasure-trails-helper"}>
-							<h3 className="side-menu-options">Home</h3>
+							<p className="side-menu-options">Home</p>
 						</Link>
 
 						<hr />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>
-							<h3 className="side-menu-options">Anagrams</h3>
+							<p className="side-menu-options">Anagrams</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/challenges"}>
-							<h3 className="side-menu-options">Challenges</h3>
+							<p className="side-menu-options">Challenges</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/coordinates"}>
-							<h3 className="side-menu-options">Coordinates</h3>
+							<p className="side-menu-options">Coordinates</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/cryptics"}>
-							<h3 className="side-menu-options">Cryptics</h3>
+							<p className="side-menu-options">Cryptics</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/lockboxes"}>
-							<h3 className="side-menu-options">Lockboxes</h3>
+							<p className="side-menu-options">Lockboxes</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/puzzleboxguide"}>
-							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+							<p className="side-menu-options">Puzzle Box Guide</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/scans"}>
-							<h3 className="side-menu-options">Scans</h3>
+							<p className="side-menu-options">Scans</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/skillingriddles"}>
-							<h3 className="side-menu-options">Skilling Riddles</h3>
+							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
 					</Col>
 				</Row>
@@ -165,8 +152,8 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={1} xl={9}></Col>
-					<Col xs={6}>
+					<Col xs={12} lg={7} xl={8}></Col>
+					<Col>
 						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
 							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />

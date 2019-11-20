@@ -35,15 +35,17 @@ class App extends Component {
 
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
-				<Row>
-					<Col xs={12} lg={9} xl={8}></Col>
-					<Col xs={1}>
+				<Row className="header-row">
+					<Col xs={1} id="hide-when-medium"></Col>
+					<Col lg={5} className="align-self-center" id="cryptic-tip-header">
+						<p style={{ margin: "auto" }}>• If a cryptic clue requires a key, then you should get the key first to save time.</p>
+					</Col>
+					<Col>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col></Col>
-					<Col xs={2} style={{ alignSelf: "center" }}>
+					<Col xs={7} lg={5} xl={4} className="align-self-center">
 						{/* the searchbar */}
 						<input
 							id="search-bar"
@@ -58,7 +60,12 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={9} xl={7} id="result-container">
+					<Col xs={12}>
+						<p id="cryptic-tip-below-header">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col xs={12} lg={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{CrypticData.map((cryptic, index) => {
 							let crypticImage = cryptic.image;
@@ -71,24 +78,15 @@ class App extends Component {
 								windowOrigin = '/treasure-trails-helper';
 							}
 
-							if (cryptic.keyInfo === "N/A") {
-								var keyStyle = {
-									display: "none"
-								}
-							} else {
-								var keyStyle = {
-									display: "block"
-								}
-							}
-
 							if (cryptic.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
-
 								return <div className="results" key={index}>
-									<h1><span>Cryptic:</span> {cryptic.riddle}</h1>
-									<img alt="cryptic_image_failed_to_load" src={window.location.origin + windowOrigin + '/images/cryptics_locations/' + crypticImage} />
-									<p><span>Solution:</span> {cryptic.answer}</p>
-									<div style={keyStyle}>
-										<hr />
+									<p className="question-text cryptic-question-text"><span>Cryptic:</span></p>
+									<p className="question-text cryptic-question-text">{cryptic.riddle}</p>
+									<p><span>Solution:</span></p>
+									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load" src={window.location.origin + windowOrigin + '/images/cryptics_locations/' + crypticImage} />
+									<p>{cryptic.answer}</p>
+									<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
+										<hr style={{ margin: "1rem 0" }} />
 										<p><span>Key Info:</span> {cryptic.keyInfo}</p>
 									</div>
 								</div>
@@ -96,48 +94,53 @@ class App extends Component {
 						})}
 					</Col>
 
-					<Col></Col>
-
 					{/* side menu links */}
-					<Col xl={2} id="side-design">
+					<Col lg={3} xl={2} id="side-design">
+						<Link
+							to={"/treasure-trails-helper"}>
+							<p className="side-menu-options">Home</p>
+						</Link>
+
+						<hr />
+
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>
-							<h3 className="side-menu-options">Anagrams</h3>
+							<p className="side-menu-options">Anagrams</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/challenges"}>
-							<h3 className="side-menu-options">Challenges</h3>
+							<p className="side-menu-options">Challenges</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/coordinates"}>
-							<h3 className="side-menu-options">Coordinates</h3>
+							<p className="side-menu-options">Coordinates</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/lockboxes"}>
-							<h3 className="side-menu-options">Lockboxes</h3>
+							<p className="side-menu-options">Lockboxes</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/maps"}>
-							<h3 className="side-menu-options">Maps</h3>
+							<p className="side-menu-options">Maps</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/puzzleboxguide"}>
-							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+							<p className="side-menu-options">Puzzle Box Guide</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/scans"}>
-							<h3 className="side-menu-options">Scans</h3>
+							<p className="side-menu-options">Scans</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/skillingriddles"}>
-							<h3 className="side-menu-options">Skilling Riddles</h3>
+							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
 					</Col>
 				</Row>
@@ -145,8 +148,8 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xl={8}></Col>
-					<Col xl={1}>
+					<Col xs={12} lg={7} xl={8}></Col>
+					<Col>
 						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
 							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />

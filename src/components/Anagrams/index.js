@@ -35,15 +35,13 @@ class App extends Component {
 
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
-				<Row>
-					<Col xs={12} lg={9} xl={8}></Col>
-					<Col xs={1}>
+				<Row className="header-row">
+					<Col>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col></Col>
-					<Col xs={2} style={{ alignSelf: "center" }}>
+					<Col xs={7} lg={5} xl={4} className="align-self-center">
 						{/* the searchbar */}
 						<input
 							id="search-bar"
@@ -58,62 +56,75 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={8} xl={7} id="result-container">
+					<Col xs={12} lg={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{AnagramData.map((anagram, index) => {
+
 							if (anagram.question.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<h1><span>Anagram:</span> {anagram.question}</h1>
-									<p><span>Solution:</span> {anagram.answer}</p>
-									<p><span>Location:</span> {anagram.location}</p>
-									<p><span>Challenge (if applicable):</span> {anagram.challenge}</p>
+									<span>Anagram:</span>
+									<p className="question-text"> {anagram.question}</p>
+									<span>Solution:</span>
+									<p> {anagram.answer}</p>
+									<span>Location:</span>
+									<p> {anagram.location}</p>
+
+									<div style={anagram.challenge === "N/A" ? { display: "none" } : { display: "block" }}>
+										<span>Challenge:</span>
+										<p> {anagram.challenge}</p>
+									</div>
 								</div>
 							}
 						})}
 					</Col>
 
-					{/* <Col></Col> */}
-
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
 						<Link
+							to={"/treasure-trails-helper"}>
+							<p className="side-menu-options">Home</p>
+						</Link>
+
+						<hr />
+
+						<Link
 							to={"/treasure-trails-helper/challenges"}>
-							<h3 className="side-menu-options">Challenges</h3>
+							<p className="side-menu-options">Challenges</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/coordinates"}>
-							<h3 className="side-menu-options">Coordinates</h3>
+							<p className="side-menu-options">Coordinates</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/cryptics"}>
-							<h3 className="side-menu-options">Cryptics</h3>
+							<p className="side-menu-options">Cryptics</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/lockboxes"}>
-							<h3 className="side-menu-options">Lockboxes</h3>
+							<p className="side-menu-options">Lockboxes</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/maps"}>
-							<h3 className="side-menu-options">Maps</h3>
+							<p className="side-menu-options">Maps</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/puzzleboxguide"}>
-							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+							<p className="side-menu-options">Puzzle Box Guide</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/scans"}>
-							<h3 className="side-menu-options">Scans</h3>
+							<p className="side-menu-options">Scans</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/skillingriddles"}>
-							<h3 className="side-menu-options">Skilling Riddles</h3>
+							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
 					</Col>
 				</Row>
@@ -121,8 +132,8 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xl={8}></Col>
-					<Col xl={1}>
+					<Col xs={12} lg={7} xl={8}></Col>
+					<Col>
 						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
 							<Link to={"#"} id="link-to-top">
 								<FontAwesomeIcon icon={faArrowUp} />

@@ -71,36 +71,21 @@ class App extends Component {
 
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
-				<Row>
-					<Col xs={1}></Col>
-					<Col xs={1}>
+				<Row className="header-row">
+					<Col xs={4}>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col xs={8} id="lockbox-basic-text"><h3>Click on an image to see its solution.  Click the help button for extra help.</h3></Col>
-					<Col id="btn-help-column">
-						<button id="btn-help" onClick={this.toggleDirections}>Help</button>
+					<Col xs={8} className="align-self-center">
+						<p style={{ marginBottom: "0" }}>• Click on an image to see its solution. Click each title the number of times listed on it.</p>
 					</Col>
-				</Row>
-				<Row>
-					<Col xs={2}></Col>
-					<Col>
-						<div id="div-directions" style={{ display: "none" }}>
-							<hr />
-							<p>1. Starting in the second row, click the tiles to change all of the tiles in the first row to be the same icon.</p>
-							<p>2. Repeat this for each row, to change the row above it, until all of the tiles are the same icon except in the last row.</p>
-							<p>3. Match your pattern to one of the patterns below, then click on it.  Remember the order: Melee > Range > Magic ></p>
-							<p>4. Starting from the top, click each tile a number of times equal to the number on said tile.</p>
-						</div>
-					</Col>
-					<Col xs={2}></Col>
 				</Row>
 			</form>
 
 			<div>
 				<Row>
-					<Col lg={9} id="result-container">
+					<Col xs={12} lg={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
 							let windowOrigin = window.location.origin;
@@ -112,10 +97,11 @@ class App extends Component {
 								windowOrigin = '/treasure-trails-helper';
 							}
 
-							return (<div key={index} className="div-lockboxes" style={{ display: "inline-block", margin: "auto", padding: "1rem" }}>
-								<h2 className="text-lockbox-patterns">Lockbox Pattern {index + 1}</h2>
+							return (<div key={index} className="div-lockboxes" style={{ display: "inline-block", padding: "1rem" }}>
+								<p className="text-lockbox-patterns">Lockbox Pattern {index + 1}</p>
 								<img
 									id={lockbox.number}
+									className="lockbox-images"
 									alt="lockbox_image_failed_to_load"
 									onClick={this.switchImage.bind(this, lockbox.number)}
 									src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
@@ -125,58 +111,57 @@ class App extends Component {
 						})}
 					</Col>
 
-					<Col></Col>
-
 					{/* side menu links */}
-					<Col xl={2} lg={3} id="side-design">
+					<Col lg={3} xl={2} id="side-design"
+					// style={{ bottom: "1rem" }}
+					>
 						<Link
 							to={"/treasure-trails-helper"}>
-							<h3 className="side-menu-options">Home</h3>
+							<p className="side-menu-options">Home</p>
 						</Link>
 
 						<hr />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>
-							<h3 className="side-menu-options">Anagrams</h3>
+							<p className="side-menu-options">Anagrams</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/challenges"}>
-							<h3 className="side-menu-options">Challenges</h3>
+							<p className="side-menu-options">Challenges</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/coordinates"}>
-							<h3 className="side-menu-options">Coordinates</h3>
+							<p className="side-menu-options">Coordinates</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/cryptics"}>
-							<h3 className="side-menu-options">Cryptics</h3>
+							<p className="side-menu-options">Cryptics</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/maps"}>
-							<h3 className="side-menu-options">Maps</h3>
+							<p className="side-menu-options">Maps</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/puzzleboxguide"}>
-							<h3 className="side-menu-options">Puzzle Box Guide</h3>
+							<p className="side-menu-options">Puzzle Box Guide</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/scans"}>
-							<h3 className="side-menu-options">Scans</h3>
+							<p className="side-menu-options">Scans</p>
 						</Link>
 
 						<Link
 							to={"/treasure-trails-helper/skillingriddles"}>
-							<h3 className="side-menu-options">Skilling Riddles</h3>
+							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
 					</Col>
-
 				</Row>
 				{/* Simple solution for pages where #btn-to-top doesn't exist, so the scrollFunction doesn't cry "error!" */}
 				<span id="btn-to-top"></span>
