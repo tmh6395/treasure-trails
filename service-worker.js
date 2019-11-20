@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/treasure-trails-helper/precache-manifest.c124abc54bf7cc06991c67393eb9ccab.js"
+  "/treasure-trails-helper/precache-manifest.758e7584b9c592a242603e44463f1efa.js"
 );
 
 self.addEventListener('message', (event) => {
