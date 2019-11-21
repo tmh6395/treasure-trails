@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import LockboxData from "../../clue_data/lockboxes.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -25,7 +25,7 @@ class App extends Component {
 
 	toggleDirections = () => {
 		let directions = document.getElementById("div-directions");
-		if (directions.style.display != "none") {
+		if (directions.style.display !== "none") {
 			directions.style.display = "none";
 		} else {
 			directions.style.display = "block";
@@ -33,52 +33,30 @@ class App extends Component {
 	}
 
 	switchImage = (lockboxId) => {
-		let windowOrigin = window.location.origin;
-		// Allows the images to load whether the app is loaded locally or on gh-pages
-		// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
-		if (windowOrigin === 'http://localhost:3000') {
-			windowOrigin = '';
-		} else if (windowOrigin === 'https://tmh6395.github.io') {
-			windowOrigin = '/treasure-trails-helper';
-		}
-
 		let lockboxImage = document.getElementById(lockboxId);
 		console.log("lockboxImage:", lockboxImage);
 		console.log("lockboxImage.id:", lockboxImage.id);
 		console.log("lockboxImage.src:", lockboxImage.src);
 
 		// This switches the <img>'s src attribute to change it from unsolved to solution, or vice-versa, when clicked
-		if (lockboxImage.src === (window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_unsolved.png")) {
-			lockboxImage.src = window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_solution.png";
-		} else if (lockboxImage.src === (window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_solution.png")) {
-			lockboxImage.src = window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_unsolved.png"
+		if (lockboxImage.src === (window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_unsolved.png")) {
+			lockboxImage.src = window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_solution.png";
+		} else if (lockboxImage.src === (window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_solution.png")) {
+			lockboxImage.src = window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_unsolved.png"
 		}
 	}
 
 	render() {
-
-		let windowOrigin = window.location.origin;
-		// Allows the images to load whether the app is loaded locally or on gh-pages
-		// gh-pages needs '/treasure-trails-helper' to properly follow the path, but locally needs nothing in its place
-		if (windowOrigin === 'http://localhost:3000') {
-			windowOrigin = '';
-		} else if (windowOrigin === 'https://tmh6395.github.io') {
-			windowOrigin = '/treasure-trails-helper';
-		}
-
-		let status = "unsolved";
-
-
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={4}>
+					<Col xs={4} md={3} lg={1}>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
 					<Col xs={8} className="align-self-center">
-						<p style={{ marginBottom: "0" }}>• Click on an image to see its solution. Click each title the number of times listed on it.</p>
+						<p className="margin-bottom-zero">• Click on an image to toggle its solution. Click each title the number of times listed on it.</p>
 					</Col>
 				</Row>
 			</form>
@@ -88,14 +66,6 @@ class App extends Component {
 					<Col xs={12} lg={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
-							let windowOrigin = window.location.origin;
-							// Allows the images to load whether the app is loaded locally or on gh-pages
-							// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
-							if (windowOrigin === 'http://localhost:3000') {
-								windowOrigin = '';
-							} else if (windowOrigin === 'https://tmh6395.github.io') {
-								windowOrigin = '/treasure-trails-helper';
-							}
 
 							return (<div key={index} className="div-lockboxes" style={{ display: "inline-block", padding: "1rem" }}>
 								<p className="text-lockbox-patterns">Lockbox Pattern {index + 1}</p>
@@ -104,10 +74,9 @@ class App extends Component {
 									className="lockbox-images"
 									alt="lockbox_image_failed_to_load"
 									onClick={this.switchImage.bind(this, lockbox.number)}
-									src={window.location.origin + windowOrigin + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
+									src={window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockbox.number + "_unsolved.png"}
 								/>
-							</div>)
-
+							</div>);
 						})}
 					</Col>
 

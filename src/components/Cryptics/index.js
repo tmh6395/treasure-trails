@@ -23,7 +23,6 @@ class App extends Component {
 	}
 
 	render() {
-
 		window.onscroll = () => {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				document.getElementById("btn-to-top").style.display = "block";
@@ -36,9 +35,9 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={1} id="hide-when-medium"></Col>
+					<Col xs={1} id="hide-when-max-medium"></Col>
 					<Col lg={5} className="align-self-center" id="cryptic-tip-header">
-						<p style={{ margin: "auto" }}>• If a cryptic clue requires a key, then you should get the key first to save time.</p>
+						<p className="margin-bottom-zero">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
 					</Col>
 					<Col>
 						<button id="btn-to-home">
@@ -69,21 +68,17 @@ class App extends Component {
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{CrypticData.map((cryptic, index) => {
 							let crypticImage = cryptic.image;
-							let windowOrigin = window.location.origin;
-							// Allows the images to load whether the app is loaded locally or on gh-pages
-							// gh-pages needs '/treasure-trails' to properly follow the path, but locally needs nothing in its place
-							if (windowOrigin === 'http://localhost:3000') {
-								windowOrigin = '';
-							} else if (windowOrigin === 'https://tmh6395.github.io') {
-								windowOrigin = '/treasure-trails-helper';
-							}
 
 							if (cryptic.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
 									<p className="question-text cryptic-question-text"><span>Cryptic:</span></p>
 									<p className="question-text cryptic-question-text">{cryptic.riddle}</p>
 									<p><span>Solution:</span></p>
-									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load" src={window.location.origin + windowOrigin + '/images/cryptics_locations/' + crypticImage} />
+
+									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load"
+										src={process.env.PUBLIC_URL + '/images/cryptics_locations/' + crypticImage}
+									/>
+
 									<p>{cryptic.answer}</p>
 									<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
 										<hr style={{ margin: "1rem 0" }} />
