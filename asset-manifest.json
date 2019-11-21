@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/treasure-trails-helper/static/css/main.5d268c0e.chunk.css",
+    "main.css": "/treasure-trails-helper/static/css/main.823cf4a7.chunk.css",
     "main.js": "/treasure-trails-helper/static/js/main.fb7d1432.chunk.js",
     "main.js.map": "/treasure-trails-helper/static/js/main.fb7d1432.chunk.js.map",
     "runtime-main.js": "/treasure-trails-helper/static/js/runtime-main.b80c6da3.js",
@@ -9,16 +9,16 @@
     "static/js/2.e7b66ee7.chunk.js": "/treasure-trails-helper/static/js/2.e7b66ee7.chunk.js",
     "static/js/2.e7b66ee7.chunk.js.map": "/treasure-trails-helper/static/js/2.e7b66ee7.chunk.js.map",
     "index.html": "/treasure-trails-helper/index.html",
-    "precache-manifest.51ae53d0e80b859ea78b936fd1f98d1a.js": "/treasure-trails-helper/precache-manifest.51ae53d0e80b859ea78b936fd1f98d1a.js",
+    "precache-manifest.ce712d88f939b97a8630652cb554abdb.js": "/treasure-trails-helper/precache-manifest.ce712d88f939b97a8630652cb554abdb.js",
     "service-worker.js": "/treasure-trails-helper/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/treasure-trails-helper/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.5d268c0e.chunk.css.map": "/treasure-trails-helper/static/css/main.5d268c0e.chunk.css.map"
+    "static/css/main.823cf4a7.chunk.css.map": "/treasure-trails-helper/static/css/main.823cf4a7.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b80c6da3.js",
     "static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.e7b66ee7.chunk.js",
-    "static/css/main.5d268c0e.chunk.css",
+    "static/css/main.823cf4a7.chunk.css",
     "static/js/main.fb7d1432.chunk.js"
   ]
 }
