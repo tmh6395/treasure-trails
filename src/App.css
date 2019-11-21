@@ -53,21 +53,22 @@ span{
 
 #main-design{
 	background-color: #172136;
-	padding-top: 10%;
 }
 
-.main-row-links{
-	font-size: 2rem;
+#main-col-links{
+	align-self: center;
 }
 
 .main-menu-options{
 	text-align: center;
-	padding: 2rem;
+	font-size: 2rem;
+	padding: 1rem;
 	margin: 1rem;
 }
+
 .main-menu-options:hover{
 	background-color: #313e59;
-	border-radius: 50%;
+	border-radius: 10px;
 }
 
 #side-design{
