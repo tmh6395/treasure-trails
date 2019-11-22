@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cecf151a7f50936c28a36c696ec14540",
+    "revision": "d74aa6622cb738c872101fdaacf9e464",
     "url": "/treasure-trails-helper/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/treasure-trails-helper/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "b19cd06fc98b5c080db4",
-    "url": "/treasure-trails-helper/static/css/main.823cf4a7.chunk.css"
+    "revision": "fb35e7a808d6bb8262ad",
+    "url": "/treasure-trails-helper/static/css/main.956d87f6.chunk.css"
   },
   {
     "revision": "2e33b9808858abe32c6e",
     "url": "/treasure-trails-helper/static/js/2.e7b66ee7.chunk.js"
   },
   {
-    "revision": "b19cd06fc98b5c080db4",
-    "url": "/treasure-trails-helper/static/js/main.fb7d1432.chunk.js"
+    "revision": "fb35e7a808d6bb8262ad",
+    "url": "/treasure-trails-helper/static/js/main.dbce3961.chunk.js"
   },
   {
     "revision": "495411c1253b71a0f928",
