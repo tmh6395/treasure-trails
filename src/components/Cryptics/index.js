@@ -71,13 +71,11 @@ class App extends Component {
 
 							if (cryptic.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<p className="question-text cryptic-question-text"><span>Cryptic:</span></p>
-									<p className="question-text cryptic-question-text">{cryptic.riddle}</p>
-									<p><span>Solution:</span></p>
+									<span>Cryptic:</span>
+									<p className="question-text">{cryptic.riddle}</p>
+									<div style={{ marginBottom: "1rem" }}><span>Solution:</span></div>
 
-									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load"
-										src={process.env.PUBLIC_URL + '/images/cryptics_locations/' + crypticImage}
-									/>
+									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load" src={process.env.PUBLIC_URL + '/images/cryptics_locations/' + crypticImage} />
 
 									<p>{cryptic.answer}</p>
 									<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
@@ -91,10 +89,15 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						<Link
+						{/* <Link
 							to={"/treasure-trails-helper"}>
 							<p className="side-menu-options">Home</p>
-						</Link>
+						</Link> */}
+
+						<div className="side-menu-current">
+							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
+							<p className="margin-bottom-zero"><span className="span-no-underline">Cryptics</span></p>
+						</div>
 
 						<hr className="side-menu-hr" />
 

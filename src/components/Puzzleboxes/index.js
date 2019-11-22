@@ -59,10 +59,15 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						<Link
+						{/* <Link
 							to={"/treasure-trails-helper"}>
 							<p className="side-menu-options">Home</p>
-						</Link>
+						</Link> */}
+
+						<div className="side-menu-current">
+							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
+							<p className="margin-bottom-zero"><span className="span-no-underline">Puzzle Boxes</span></p>
+						</div>
 
 						<hr className="side-menu-hr" />
 
@@ -106,7 +111,6 @@ class App extends Component {
 							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
 					</Col>
-					<Col></Col>
 				</Row>
 			</div>
 

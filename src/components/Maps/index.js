@@ -79,10 +79,15 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						<Link
+						{/* <Link
 							to={"/treasure-trails-helper"}>
 							<p className="side-menu-options">Home</p>
-						</Link>
+						</Link> */}
+
+						<div className="side-menu-current">
+							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
+							<p className="margin-bottom-zero"><span className="span-no-underline">Maps</span></p>
+						</div>
 
 						<hr className="side-menu-hr" />
 
@@ -131,7 +136,7 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
+					<Col xs={12} lg={11}></Col>
 					<Col>
 						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
 							<Link to={"#"} id="link-to-top">
