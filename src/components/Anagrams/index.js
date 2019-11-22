@@ -85,7 +85,7 @@ class App extends Component {
 							<p className="side-menu-options">Home</p>
 						</Link>
 
-						<hr />
+						<hr className="side-menu-hr" />
 
 						<Link
 							to={"/treasure-trails-helper/challenges"}>

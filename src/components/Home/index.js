@@ -7,7 +7,7 @@ class Home extends Component {
 	render() {
 		return (<>
 			<div id="main-design">
-				<Row className="main-row-links header-row">
+				<Row className="main-row-links main-header-row">
 					<Col></Col>
 					<Col xs={12} md={8} lg={4} id="main-col-links">
 						<Link

@@ -5,7 +5,7 @@
 		"answer": "13"
 	},
 	{
-		"asker": "Brimstail",
+		"asker": "Brimstail / Hazelmere",
 		"question": "What is 19 to the power of 3?",
 		"answer": "6859"
 	},
@@ -48,11 +48,6 @@
 		"asker": "Gnome Coach",
 		"question": "How many gnomes on the gnome ball field have red patches on their uniforms?",
 		"answer": "6"
-	},
-	{
-		"asker": "Hazlemere",
-		"question": "What is 19 to the power of 3?",
-		"answer": "6859"
 	},
 	{
 		"asker": "Karim",

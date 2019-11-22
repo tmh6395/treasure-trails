@@ -59,7 +59,7 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} lg={7} id="result-container">
+					<Col xs={12} lg={9} xl={10} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						<Row>
 							{MapData.map((map, index) => {
@@ -68,15 +68,14 @@ class App extends Component {
 									<img
 										id={map.keyword}
 										alt="map_image_failed_to_load"
+										style={{ width: "100%" }}
 										onClick={this.mapImageSwap.bind(this, map.keyword)}
 										src={window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/Map_clue_" + map.keyword + ".png"} />
-									<p>{map.location}</p>
+									<p>• {map.location}</p>
 								</Col>)
 							})}
 						</Row>
 					</Col>
-
-					<Col></Col>
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
@@ -85,7 +84,7 @@ class App extends Component {
 							<p className="side-menu-options">Home</p>
 						</Link>
 
-						<hr />
+						<hr className="side-menu-hr" />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>

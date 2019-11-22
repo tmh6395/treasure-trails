@@ -1,14 +1,18 @@
 /* ************************************ CSS FOR APP.JS BELOW ************************************ */
 
 html, body, #root, #main-row-routes, #main-design{
-	min-height: 100%;
+	height: 100%;
 	/* background-color: #253f74; */
 	background-color: #313e59;
-	height: 100%;
+	/* height: 100%; */
 }
 
 html{
   overflow-y: scroll;
+}
+
+body{
+	min-height: 100%;
 }
 
 .row{
@@ -24,18 +28,15 @@ html{
 	background-color: #313e59;
 }
 
-p, h1, h2, h3 {
+p{
 	color: #cbd9f4;
 	font-family: Helvetica;
-}
-
-p{
 	font-size: 16pt;
+	margin-bottom: 0.5rem;
 }
 
 .question-text{
 	font-size: 24pt;
-	margin-bottom: 0;
 }
 
 .range-text{
@@ -103,6 +104,11 @@ span{
 	margin-left: -1rem;
 }
 
+.main-header-row{
+	min-height: 100%;
+}
+
+
 .header-row{
 	min-height: inherit;
 }
@@ -113,7 +119,7 @@ span{
 
 .results{
 	background-color: #172136;
-	padding: 1rem 2rem 2rem;
+	padding: 1rem 2rem 1rem 1.5rem;
 	margin: 1rem;
 	font-size: calc(5px + 2vmin);
 	border-radius: 10px;
@@ -169,6 +175,10 @@ img{
 
 hr{
 	background-color: #cbd9f4;
+	margin: 2rem 0 0;
+}
+
+.side-menu-hr{
 	margin: 0 1rem;
 }
 

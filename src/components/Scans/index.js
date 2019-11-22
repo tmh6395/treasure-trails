@@ -87,9 +87,7 @@ class App extends Component {
 									<p className="range-text">{scan.range}</p> */}
 									<p><span>Possible Dig Sites:</span></p>
 
-									<img alt="scan_image_failed_to_load"
-										src={process.env.PUBLIC_URL + '/images/scans_locations/' + scanImage}
-									/>
+									<img alt="scan_image_failed_to_load" src={process.env.PUBLIC_URL + '/images/scans_locations/' + scanImage} />
 
 								</div>
 							}
@@ -103,7 +101,7 @@ class App extends Component {
 							<p className="side-menu-options">Home</p>
 						</Link>
 
-						<hr />
+						<hr className="side-menu-hr" />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>

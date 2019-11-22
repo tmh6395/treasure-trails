@@ -81,15 +81,13 @@ class App extends Component {
 					</Col>
 
 					{/* side menu links */}
-					<Col lg={3} xl={2} id="side-design"
-					// style={{ bottom: "1rem" }}
-					>
+					<Col lg={3} xl={2} id="side-design">
 						<Link
 							to={"/treasure-trails-helper"}>
 							<p className="side-menu-options">Home</p>
 						</Link>
 
-						<hr />
+						<hr className="side-menu-hr" />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>

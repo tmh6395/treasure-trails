@@ -145,7 +145,7 @@
 		"riddle": "Round and round we go, burning, burning all aglow.",
 		"solution": "Burn a curly root in the Jadinko Lair. You must start a firepit, not just add to one.",
 		"requirements": {
-			"quest": "",
+			"quest": "N/A",
 			"skills": [
 				"83 Woodcutting, ",
 				"83 Firemaking"
@@ -267,7 +267,7 @@
 		"riddle": "Where there is Light there is also Death. Should you contain this you may progress.",
 		"solution": "Craft some death runes. This only works at the Death Altar, not the Ourania Runecrafting Altar.",
 		"requirements": {
-			"quest": "Mourning's End PArt II",
+			"quest": "Mourning's End Part II",
 			"skills": [
 				"65 Runecrafting"
 			]

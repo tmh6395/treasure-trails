@@ -81,7 +81,7 @@ class App extends Component {
 
 									<p>{cryptic.answer}</p>
 									<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
-										<hr style={{ margin: "1rem 0" }} />
+										<hr />
 										<p><span>Key Info:</span> {cryptic.keyInfo}</p>
 									</div>
 								</div>
@@ -96,7 +96,7 @@ class App extends Component {
 							<p className="side-menu-options">Home</p>
 						</Link>
 
-						<hr />
+						<hr className="side-menu-hr" />
 
 						<Link
 							to={"/treasure-trails-helper/anagrams"}>
