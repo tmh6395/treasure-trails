@@ -28,7 +28,7 @@ class App extends Component {
 		// This switches the <img>'s src attribute to change it from the clue map to the overworld map, or vice-versa, when clicked
 		if (mapImage.src === (window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/Map_clue_" + mapImage.id + ".png")) {
 			mapImage.src = window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/800px-Map_clue_location_" + mapImage.id + ".png";
-		} else if (mapImage.src = window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/800px-Map_clue_location_" + mapImage.id + ".png") {
+		} else if (mapImage.src === window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/800px-Map_clue_location_" + mapImage.id + ".png") {
 			mapImage.src = window.location.origin + process.env.PUBLIC_URL + "/images/maps_locations/Map_clue_" + mapImage.id + ".png";
 		}
 	}

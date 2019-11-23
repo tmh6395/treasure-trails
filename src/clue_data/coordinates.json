@@ -9,7 +9,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "Quest: Regicide",
-		"location": "Dig south-east of the pond north-east of Tyras Camp, past the stick trap."
+		"location": "Dig south-east of the pond north-east of Tyras Camp, past the stick trap.",
+		"image": "800px-Coordinate_clue_00.00N_07.13W.png"
 	},
 	{
 		"degreesN": -1,
@@ -21,7 +22,8 @@
 		"degreesE": 1,
 		"minutesE": 13,
 		"requirements": "None",
-		"location": "West of Tree Gnome Village, south of the fruit tree patch."
+		"location": "West of Tree Gnome Village, south of the fruit tree patch.",
+		"image": "800px-Coordinate_clue_00.05S_01.13E.png"
 	},
 	{
 		"degreesN": -1,
@@ -33,7 +35,8 @@
 		"degreesE": 14,
 		"minutesE": 0,
 		"requirements": "",
-		"location": "West of the General Store on Musa Point."
+		"location": "West of the General Store on Musa Point.",
+		"image": "800px-Coordinate_clue_00.13S_14.00E.png"
 	},
 	{
 		"degreesN": -1,
@@ -45,7 +48,8 @@
 		"degreesE": 9,
 		"minutesE": 28,
 		"requirements": "",
-		"location": "Entrance of Brimhaven Dungeon."
+		"location": "Entrance of Brimhaven Dungeon.",
+		"image": "800px-Coordinate_clue_00.18S_09.28E.png"
 	},
 	{
 		"degreesN": -1,
@@ -57,7 +61,8 @@
 		"degreesE": 23,
 		"minutesE": 15,
 		"requirements": "",
-		"location": "East of Shattered Worlds within the Lumbridge Swamp."
+		"location": "East of Shattered Worlds within the Lumbridge Swamp.",
+		"image": "800px-Coordinate_clue_00.20S_23.15E.png"
 	},
 	{
 		"degreesN": -1,
@@ -69,7 +74,8 @@
 		"degreesE": 17,
 		"minutesE": 43,
 		"requirements": "",
-		"location": "At the entrance to the Asgarnian Ice Dungeon."
+		"location": "At the entrance to the Asgarnian Ice Dungeon.",
+		"image": "800px-Coordinate_clue_00.31S_17.43E.png"
 	},
 	{
 		"degreesN": 0,
@@ -81,7 +87,8 @@
 		"degreesE": 24,
 		"minutesE": 16,
 		"requirements": "",
-		"location": "North of The Nexus within Lumbridge Swamp."
+		"location": "North of The Nexus within Lumbridge Swamp.",
+		"image": "800px-Coordinate_clue_00.50N_24.16E.png"
 	},
 	{
 		"degreesN": -1,
@@ -93,7 +100,8 @@
 		"degreesE": 14,
 		"minutesE": 15,
 		"requirements": "",
-		"location": "South of Musa Point, near Tiadeche."
+		"location": "South of Musa Point, near Tiadeche.",
+		"image": "800px-Coordinate_clue_01.18S_14.15E.png"
 	},
 	{
 		"degreesN": 1,
@@ -105,7 +113,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "Quest: Regicide",
-		"location": "South-west of the Elf Camp in Tirannwn. (Opposite side of the river near a small pond)"
+		"location": "South-west of the Elf Camp in Tirannwn. (Opposite side of the river near a small pond)",
+		"image": "800px-Coordinate_clue_01.24N_08.05W.png"
 	},
 	{
 		"degreesN": 1,
@@ -117,7 +126,8 @@
 		"degreesE": 8,
 		"minutesE": 1,
 		"requirements": "10 Agility",
-		"location": "Centre of Moss Giant Island off Brimhaven."
+		"location": "Centre of Moss Giant Island off Brimhaven.",
+		"image": "800px-Coordinate_clue_01.26N_08.01E.png"
 	},
 	{
 		"degreesN": -1,
@@ -129,7 +139,8 @@
 		"degreesE": 7,
 		"minutesE": 28,
 		"requirements": "",
-		"location": "Hazelmere's island east of Yanille."
+		"location": "Hazelmere's island east of Yanille.",
+		"image": "800px-Coordinate_clue_01.35S_07.28E.png"
 	},
 	{
 		"degreesN": 2,
@@ -141,7 +152,8 @@
 		"degreesE": 28,
 		"minutesE": 45,
 		"requirements": "",
-		"location": "Lookouts of the Duel Arena."
+		"location": "Lookouts of the Duel Arena.",
+		"image": "800px-Coordinate_clue_02.33N_28.45E.png"
 	},
 	{
 		"degreesN": 2,
@@ -153,7 +165,8 @@
 		"degreesE": 22,
 		"minutesE": 30,
 		"requirements": "",
-		"location": "In the Lumbridge Crater."
+		"location": "In the Lumbridge Crater.",
+		"image": "800px-Coordinate_clue_02.48N_22.30E.png"
 	},
 	{
 		"degreesN": 2,
@@ -165,7 +178,8 @@
 		"degreesE": 6,
 		"minutesE": 20,
 		"requirements": "",
-		"location": "South of East Ardougne, north of the Tower of Life."
+		"location": "South of East Ardougne, north of the Tower of Life.",
+		"image": "800px-Coordinate_clue_02.50N_06.20E.png"
 	},
 	{
 		"degreesN": 2,
@@ -177,7 +191,8 @@
 		"degreesE": 21,
 		"minutesE": 46,
 		"requirements": "",
-		"location": "In between the Draynor Jail and the Lumbridge Crater."
+		"location": "In between the Draynor Jail and the Lumbridge Crater.",
+		"image": "800px-Coordinate_clue_02.50N_21.46E.png"
 	},
 	{
 		"degreesN": -1,
@@ -189,7 +204,8 @@
 		"degreesE": 5,
 		"minutesE": 3,
 		"requirements": "",
-		"location": "South of Yanille, next to a triad of bushes."
+		"location": "South of Yanille, next to a triad of bushes.",
+		"image": "800px-Coordinate_clue_03.03S_05.03E.png"
 	},
 	{
 		"degreesN": -1,
@@ -201,7 +217,8 @@
 		"degreesE": 13,
 		"minutesE": 35,
 		"requirements": "",
-		"location": "North of the Nature Altar on Karamja, west of the Gleaming wisp colony."
+		"location": "North of the Nature Altar on Karamja, west of the Gleaming wisp colony.",
+		"image": "800px-Coordinate_clue_03.35S_13.35E.png"
 	},
 	{
 		"degreesN": -1,
@@ -213,7 +230,8 @@
 		"degreesE": 13,
 		"minutesE": 58,
 		"requirements": "",
-		"location": "At the Gleaming wisp colony."
+		"location": "At the Gleaming wisp colony.",
+		"image": "800px-Coordinate_clue_03.39S_13.58E.png"
 	},
 	{
 		"degreesN": -1,
@@ -225,7 +243,8 @@
 		"degreesE": 22,
 		"minutesE": 45,
 		"requirements": "",
-		"location": "At the Bedabin Camp."
+		"location": "At the Bedabin Camp.",
+		"image": "800px-Coordinate_clue_03.45S_22.45E.png"
 	},
 	{
 		"degreesN": -1,
@@ -237,7 +256,8 @@
 		"degreesE": 12,
 		"minutesE": 46,
 		"requirements": "",
-		"location": "North of Shilo Village, at a mining site."
+		"location": "North of Shilo Village, at a mining site.",
+		"image": "800px-Coordinate_clue_04.00S_12.46E.png"
 	},
 	{
 		"degreesN": -1,
@@ -249,7 +269,8 @@
 		"degreesE": 3,
 		"minutesE": 11,
 		"requirements": "Started Quest: Watchtower",
-		"location": "In Gu'Tanoth. For the first time getting here, a rock cake and 20 coins are needed to reach the final point."
+		"location": "In Gu'Tanoth. For the first time getting here, a rock cake and 20 coins are needed to reach the final point.",
+		"image": "800px-Coordinate_clue_04.03S_03.11E.png"
 	},
 	{
 		"degreesN": -1,
@@ -261,7 +282,8 @@
 		"degreesE": 4,
 		"minutesE": 24,
 		"requirements": "",
-		"location": "On the island where Gorad is located. To reach here, you must enter a round pit cave entrance south-west of Gu'Tanoth. The cave entrance is depicted on the minimap."
+		"location": "On the island where Gorad is located. To reach here, you must enter a round pit cave entrance south-west of Gu'Tanoth. The cave entrance is depicted on the minimap.",
+		"image": "800px-Coordinate_clue_04.05S_04.24E.png"
 	},
 	{
 		"degreesN": 4,
@@ -273,7 +295,8 @@
 		"degreesE": 12,
 		"minutesE": 45,
 		"requirements": "Started Quest: Dragon Slayer",
-		"location": "North side of Crandor."
+		"location": "North side of Crandor.",
+		"image": "800px-Coordinate_clue_04.13N_12.45E.png"
 	},
 	{
 		"degreesN": -1,
@@ -285,7 +308,8 @@
 		"degreesE": 16,
 		"minutesE": 16,
 		"requirements": "Started Quest: The Grand Tree",
-		"location": "Outside the east wall of the Shipyard building with G.L.O. Caranock."
+		"location": "Outside the east wall of the Shipyard building with G.L.O. Caranock.",
+		"image": "800px-Coordinate_clue_04.16S_16.16E.png"
 	},
 	{
 		"degreesN": 4,
@@ -297,7 +321,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "Quest: Regicide",
-		"location": "Dig by one of the Red spiders' eggs spawns in Arandar Pass."
+		"location": "Dig by one of the Red spiders' eggs spawns in Arandar Pass.",
+		"image": "800px-Coordinate_clue_04.41N_03.09W.png"
 	},
 	{
 		"degreesN": -1,
@@ -309,7 +334,8 @@
 		"degreesE": 4,
 		"minutesE": 28,
 		"requirements": "",
-		"location": "In the Feldip Hills, south-east of Gu'Tanoth."
+		"location": "In the Feldip Hills, south-east of Gu'Tanoth.",
+		"image": "800px-Coordinate_clue_05.20S_04.28E.png"
 	},
 	{
 		"degreesN": 5,
@@ -321,7 +347,8 @@
 		"degreesE": 31,
 		"minutesE": 15,
 		"requirements": "",
-		"location": "At the Nature Grotto within Mort Myre Swamp. Fetch casket scroll will not work here since it is a Summoning-free zone."
+		"location": "At the Nature Grotto within Mort Myre Swamp. Fetch casket scroll will not work here since it is a Summoning-free zone.",
+		"image": "800px-Coordinate_clue_05.37N_31.15E.png"
 	},
 	{
 		"degreesN": 5,
@@ -333,7 +360,8 @@
 		"degreesE": 23,
 		"minutesE": 5,
 		"requirements": "",
-		"location": "South-west of the Champions' Guild."
+		"location": "South-west of the Champions' Guild.",
+		"image": "800px-Coordinate_clue_05.43N_23.05E.png"
 	},
 	{
 		"degreesN": -1,
@@ -345,7 +373,8 @@
 		"degreesE": 10,
 		"minutesE": 5,
 		"requirements": "15 Agility",
-		"location": "One tile south of the rocks in the ruined building on Cairn Isle."
+		"location": "One tile south of the rocks in the ruined building on Cairn Isle.",
+		"image": "800px-Coordinate_clue_05.50S_10.05E.png"
 	},
 	{
 		"degreesN": -1,
@@ -357,7 +386,8 @@
 		"degreesE": 21,
 		"minutesE": 48,
 		"requirements": "",
-		"location": "West of the Bandit Camp at the small, nose-shaped peninsula."
+		"location": "West of the Bandit Camp at the small, nose-shaped peninsula.",
+		"image": "800px-Coordinate_clue_06.00S_21.48E.png"
 	},
 	{
 		"degreesN": -1,
@@ -369,7 +399,8 @@
 		"degreesE": 15,
 		"minutesE": 7,
 		"requirements": "",
-		"location": "On the eastern side of Karamja, north of the waterfall."
+		"location": "On the eastern side of Karamja, north of the waterfall.",
+		"image": "800px-Coordinate_clue_06.11S_15.07E.png"
 	},
 	{
 		"degreesN": 6,
@@ -381,7 +412,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "",
-		"location": "North of the World Gate, north-west of the Outpost."
+		"location": "North of the World Gate, north-west of the Outpost.",
+		"image": "800px-Coordinate_clue_06.31N_01.46W.png"
 	},
 	{
 		"degreesN": 7,
@@ -393,7 +425,8 @@
 		"degreesE": 30,
 		"minutesE": 56,
 		"requirements": "",
-		"location": "In Mort Myre Swamp north of the Nature Grotto, next to the lake south of the 2 westernmost fishing spots."
+		"location": "In Mort Myre Swamp north of the Nature Grotto, next to the lake south of the 2 westernmost fishing spots.",
+		"image": "800px-Coordinate_clue_07.05N_30.56E.png"
 	},
 	{
 		"degreesN": 7,
@@ -405,7 +438,8 @@
 		"degreesE": 14,
 		"minutesE": 15,
 		"requirements": "",
-		"location": "In the Taverley wheat field."
+		"location": "In the Taverley wheat field.",
+		"image": "800px-Coordinate_clue_07.22N_14.15E.png"
 	},
 	{
 		"degreesN": 7,
@@ -417,7 +451,8 @@
 		"degreesE": 15,
 		"minutesE": 0,
 		"requirements": "",
-		"location": "South-east of Taverley, on the peninsula where The Lady of the Lake resides."
+		"location": "South-east of Taverley, on the peninsula where The Lady of the Lake resides.",
+		"image": "800px-Coordinate_clue_07.33N_15.00E.png"
 	},
 	{
 		"degreesN": 7,
@@ -429,7 +464,8 @@
 		"degreesE": 6,
 		"minutesE": 0,
 		"requirements": "",
-		"location": "North of Ardougne, outside of Hemenster."
+		"location": "North of Ardougne, outside of Hemenster.",
+		"image": "800px-Coordinate_clue_07.41N_06.00E.png"
 	},
 	{
 		"degreesN": -1,
@@ -441,7 +477,8 @@
 		"degreesE": 12,
 		"minutesE": 26,
 		"requirements": "Started Quest: Legend's Quest",
-		"location": "In the middle of the Kharazi Jungle, directly south of the water pool."
+		"location": "In the middle of the Kharazi Jungle, directly south of the water pool.",
+		"image": "800px-Coordinate_clue_07.43S_12.26E.png"
 	},
 	{
 		"degreesN": 8,
@@ -453,7 +490,8 @@
 		"degreesE": 31,
 		"minutesE": 16,
 		"requirements": "",
-		"location": "In Mort Myre Swamp, north-east of a pond with two fishing icons on the minimap, in between three rotting logs."
+		"location": "In Mort Myre Swamp, north-east of a pond with two fishing icons on the minimap, in between three rotting logs.",
+		"image": "800px-Coordinate_clue_08.03N_31.16E.png"
 	},
 	{
 		"degreesN": -1,
@@ -465,7 +503,8 @@
 		"degreesE": 15,
 		"minutesE": 56,
 		"requirements": "",
-		"location": "At Herblore Habitat, by the farming patches. Climb the climbable vine directly south of Papa Mambo."
+		"location": "At Herblore Habitat, by the farming patches. Climb the climbable vine directly south of Papa Mambo.",
+		"image": "800px-Coordinate_clue_08.05S_15.56E.png"
 	},
 	{
 		"degreesN": -1,
@@ -477,7 +516,8 @@
 		"degreesE": 10,
 		"minutesE": 28,
 		"requirements": "Started Quest: Legend's Quest",
-		"location": "In the south-west corner of the Kharazi Jungle on Karamja."
+		"location": "In the south-west corner of the Kharazi Jungle on Karamja.",
+		"image": "800px-Coordinate_clue_08.26S_10.28E.png"
 	},
 	{
 		"degreesN": 8,
@@ -489,7 +529,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "",
-		"location": "At Tree Gnome Stronghold in a pen containing Terrorbirds."
+		"location": "At Tree Gnome Stronghold in a pen containing Terrorbirds.",
+		"image": "800px-Coordinate_clue_08.33N_01.39W.png"
 	},
 	{
 		"degreesN": 9,
@@ -501,7 +542,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "",
-		"location": "At the base of Eagles' Peak."
+		"location": "At the base of Eagles' Peak.",
+		"image": "800px-Coordinate_clue_09.22N_02.24W.png"
 	},
 	{
 		"degreesN": 9,
@@ -513,7 +555,8 @@
 		"degreesE": 2,
 		"minutesE": 15,
 		"requirements": "Started Quest: Waterfall Quest",
-		"location": "In the middle of Baxtorian Falls. Board the log raft, use a rope with the rock to get to the second island with the tree and dig in the centre of that island."
+		"location": "In the middle of Baxtorian Falls. Board the log raft, use a rope with the rock to get to the second island with the tree and dig in the centre of that island.",
+		"image": "800px-Coordinate_clue_09.33N_02.15E.png"
 	},
 	{
 		"degreesN": 9,
@@ -523,9 +566,10 @@
 		"degreesW": -1,
 		"minutesW": -1,
 		"degreesE": 17,
-		"minutesE": 49,
+		"minutesE": 39,
 		"requirements": "",
-		"location": "On Ice Mountain, south of the oracle."
+		"location": "On Ice Mountain, south of the oracle.",
+		"image": "800px-Coordinate_clue_09.48N_17.39E.png"
 	},
 	{
 		"degreesN": 11,
@@ -537,7 +581,8 @@
 		"degreesE": 31,
 		"minutesE": 20,
 		"requirements": "",
-		"location": "East of the entrance to the Slayer Tower in Canifis."
+		"location": "East of the entrance to the Slayer Tower in Canifis.",
+		"image": "800px-Coordinate_clue_11.03N_31.20E.png"
 	},
 	{
 		"degreesN": 11,
@@ -549,7 +594,8 @@
 		"degreesE": -1,
 		"minutesE": -1,
 		"requirements": "",
-		"location": "In the Tree Gnome Stronghold swamp, west of the Grand Tree."
+		"location": "In the Tree Gnome Stronghold swamp, west of the Grand Tree.",
+		"image": "800px-Coordinate_clue_11.05N_00.45W.png"
 	},
 	{
 		"degreesN": 11,
@@ -561,7 +607,8 @@
 		"degreesE": 14,
 		"minutesE": 58,
 		"requirements": "",
-		"location": "South east of the Burthorpe Lodestone near some hay bales."
+		"location": "South east of the Burthorpe Lodestone near some hay bales.",
+		"image": "800px-Coordinate_clue_11.41N_14.58E.png"
 	},
 	{
 		"degreesN": 12,
@@ -573,7 +620,8 @@
 		"degreesE": 20,
 		"minutesE": 20,
 		"requirements": "",
-		"location": "At the Air Obelisk in level 7 Wilderness."
+		"location": "At the Air Obelisk in level 7 Wilderness.",
+		"image": "800px-Coordinate_clue_12.48N_20.20E.png"
 	},
 	{
 		"degreesN": 13,
@@ -585,7 +633,8 @@
 		"degreesE": 21,
 		"minutesE": 1,
 		"requirements": "",
-		"location": "Level 11 Wilderness north of Edgeville."
+		"location": "Level 11 Wilderness north of Edgeville.",
+		"image": "800px-Coordinate_clue_13.46N_21.01E.png"
 	},
 	{
 		"degreesN": 14,
@@ -597,7 +646,8 @@
 		"degreesE": 9,
 		"minutesE": 13,
 		"requirements": "",
-		"location": "South-west of Mountain Camp, by the tree which gives the enchanted lyre."
+		"location": "South-west of Mountain Camp, by the tree which gives the enchanted lyre.",
+		"image": "800px-Coordinate_clue_14.54N_09.13E.png"
 	},
 	{
 		"degreesN": 15,
@@ -609,7 +659,8 @@
 		"degreesE": 13,
 		"minutesE": 52,
 		"requirements": "Started Quest: Troll Stronghold",
-		"location": "On the top of Trollheim, south-west of entrance to Eadgar's cave."
+		"location": "On the top of Trollheim, south-west of entrance to Eadgar's cave.",
+		"image": "800px-Coordinate_clue_15.48N_13.52E.png"
 	},
 	{
 		"degreesN": 16,
@@ -621,7 +672,8 @@
 		"degreesE": 14,
 		"minutesE": 7,
 		"requirements": "Started Quest: Troll Stronghold",
-		"location": "On the top of Trollheim, near the entrance to Eadgar's cave."
+		"location": "On the top of Trollheim, near the entrance to Eadgar's cave.",
+		"image": "800px-Coordinate_clue_16.03N_14.07E.png"
 	},
 	{
 		"degreesN": 16,
@@ -633,7 +685,8 @@
 		"degreesE": 12,
 		"minutesE": 45,
 		"requirements": "Started Quest: Troll Stronghold",
-		"location": "In front of the entrance to the Troll Stronghold."
+		"location": "In front of the entrance to the Troll Stronghold.",
+		"image": "800px-Coordinate_clue_16.20N_12.45E.png"
 	},
 	{
 		"degreesN": 16,
@@ -645,7 +698,8 @@
 		"degreesE": 16,
 		"minutesE": 28,
 		"requirements": "",
-		"location": "At the Ruins in level 22 Wilderness."
+		"location": "At the Ruins in level 22 Wilderness.",
+		"image": "800px-Coordinate_clue_16.30N_16.28E.png"
 	},
 	{
 		"degreesN": 16,
@@ -657,7 +711,8 @@
 		"degreesE": 27,
 		"minutesE": 1,
 		"requirements": "",
-		"location": "North-east of the Boneyard Hunter area, in level 22 Wilderness, west of the green dragons."
+		"location": "North-east of the Boneyard Hunter area, in level 22 Wilderness, west of the green dragons.",
+		"image": "800px-Coordinate_clue_16.35N_27.01E.png"
 	},
 	{
 		"degreesN": 16,
@@ -669,7 +724,8 @@
 		"degreesE": 19,
 		"minutesE": 11,
 		"requirements": "",
-		"location": "At the Bandit Camp in level 22 Wilderness, near the Giant rats. Beware of high-level Bandit Brawlers, or get a skull so that they are not aggressive."
+		"location": "At the Bandit Camp in level 22 Wilderness, near the Giant rats. Beware of high-level Bandit Brawlers, or get a skull so that they are not aggressive.",
+		"image": "800px-Coordinate_clue_16.43N_19.11E.png"
 	},
 	{
 		"degreesN": 17,
@@ -681,7 +737,8 @@
 		"degreesE": 8,
 		"minutesE": 30,
 		"requirements": "",
-		"location": "North-east of Rellekka by the rock crabs."
+		"location": "North-east of Rellekka by the rock crabs.",
+		"image": "800px-Coordinate_clue_17.50N_08.30E.png"
 	},
 	{
 		"degreesN": 18,
@@ -693,7 +750,8 @@
 		"degreesE": 25,
 		"minutesE": 16,
 		"requirements": "",
-		"location": "At the Ruins in level 28 Wilderness, north of the Graveyard of Shadows."
+		"location": "At the Ruins in level 28 Wilderness, north of the Graveyard of Shadows.",
+		"image": "800px-Coordinate_clue_18.03N_25.16E.png"
 	},
 	{
 		"degreesN": 18,
@@ -705,7 +763,8 @@
 		"degreesE": 16,
 		"minutesE": 33,
 		"requirements": "",
-		"location": "At The Forgotten Cemetery in level 29 Wilderness, north-west of the Bandit Camp."
+		"location": "At The Forgotten Cemetery in level 29 Wilderness, north-west of the Bandit Camp.",
+		"image": "800px-Coordinate_clue_18.22N_16.33E.png"
 	},
 	{
 		"degreesN": 19,
@@ -717,7 +776,8 @@
 		"degreesE": 25,
 		"minutesE": 7,
 		"requirements": "",
-		"location": "South-east of the Red Dragon Isle in level 35 Wilderness."
+		"location": "South-east of the Red Dragon Isle in level 35 Wilderness.",
+		"image": "800px-Coordinate_clue_19.43N_25.07E.png"
 	},
 	{
 		"degreesN": 20,
@@ -729,7 +789,8 @@
 		"degreesE": 21,
 		"minutesE": 52,
 		"requirements": "",
-		"location": "South of the Wilderness herb patch in level 36 Wilderness."
+		"location": "South of the Wilderness herb patch in level 36 Wilderness.",
+		"image": "800px-Coordinate_clue_20.05N_21.52E.png"
 	},
 	{
 		"degreesN": 20,
@@ -741,7 +802,8 @@
 		"degreesE": 18,
 		"minutesE": 33,
 		"requirements": "",
-		"location": "At the Hobgoblin mine in level 36 Wilderness, below the Lava Maze."
+		"location": "At the Hobgoblin mine in level 36 Wilderness, below the Lava Maze.",
+		"image": "800px-Coordinate_clue_20.07N_18.33E.png"
 	},
 	{
 		"degreesN": 20,
@@ -753,7 +815,8 @@
 		"degreesE": 15,
 		"minutesE": 48,
 		"requirements": "",
-		"location": "On the west side of the Chaos Temple in level 38 Wilderness, outsite the building."
+		"location": "On the west side of the Chaos Temple in level 38 Wilderness, outsite the building.",
+		"image": "800px-Coordinate_clue_20.33N_15.48E.png"
 	},
 	{
 		"degreesN": 21,
@@ -765,7 +828,8 @@
 		"degreesE": 17,
 		"minutesE": 54,
 		"requirements": "",
-		"location": "West of the Lava Maze in level 41 Wilderness, by the entrance to the King Black Dragon lair."
+		"location": "West of the Lava Maze in level 41 Wilderness, by the entrance to the King Black Dragon lair.",
+		"image": "800px-Coordinate_clue_21.24N_17.54E.png"
 	},
 	{
 		"degreesN": 22,
@@ -777,7 +841,8 @@
 		"degreesE": 3,
 		"minutesE": 1,
 		"requirements": "Quest: The Fremennik Trials",
-		"location": "Outside of the Managing Miscellania mine in Miscellania."
+		"location": "Outside of the Managing Miscellania mine in Miscellania.",
+		"image": "800px-Coordinate_clue_22.30N_03.01E.png"
 	},
 	{
 		"degreesN": 22,
@@ -789,7 +854,8 @@
 		"degreesE": 19,
 		"minutesE": 18,
 		"requirements": "",
-		"location": "At the Wilderness (Level 47) Lava Maze mine."
+		"location": "At the Wilderness (Level 47) Lava Maze mine.",
+		"image": "800px-Coordinate_clue_22.35N_19.18E.png"
 	},
 	{
 		"degreesN": 22,
@@ -801,7 +867,8 @@
 		"degreesE": 26,
 		"minutesE": 33,
 		"requirements": "",
-		"location": "At the Demonic Ruins in level 47 Wilderness."
+		"location": "At the Demonic Ruins in level 47 Wilderness.",
+		"image": "800px-Coordinate_clue_22.45N_26.33E.png"
 	},
 	{
 		"degreesN": 24,
@@ -813,7 +880,8 @@
 		"degreesE": 26,
 		"minutesE": 24,
 		"requirements": "",
-		"location": "Inside the Rogues' Castle in level 53 wilderness, just north of the north-west tower. Beware the Chaos Elemental."
+		"location": "Inside the Rogues' Castle in level 53 wilderness, just north of the north-west tower. Beware the Chaos Elemental.",
+		"image": "800px-Coordinate_clue_24.26N_26.24E.png"
 	},
 	{
 		"degreesN": 24,
@@ -825,7 +893,8 @@
 		"degreesE": 22,
 		"minutesE": 28,
 		"requirements": "",
-		"location": "North of the Deserted Keep in level 55 Wilderness."
+		"location": "North of the Deserted Keep in level 55 Wilderness.",
+		"image": "800px-Coordinate_clue_24.56N_22.28E.png"
 	},
 	{
 		"degreesN": 24,
@@ -837,7 +906,8 @@
 		"degreesE": 18,
 		"minutesE": 43,
 		"requirements": "",
-		"location": "Behind the Pirates' Hideout in the level 56 Wilderness."
+		"location": "Behind the Pirates' Hideout in the level 56 Wilderness.",
+		"image": "800px-Coordinate_clue_24.58N_18.43E.png"
 	},
 	{
 		"degreesN": 25,
@@ -849,7 +919,8 @@
 		"degreesE": 17,
 		"minutesE": 5,
 		"requirements": "",
-		"location": "At the Ice Plateau in level 56 Wilderness, north-west of the Wilderness Agility Course."
+		"location": "At the Ice Plateau in level 56 Wilderness, north-west of the Wilderness Agility Course.",
+		"image": "800px-Coordinate_clue_25.03N_17.05E.png"
 	},
 	{
 		"degreesN": 25,
@@ -861,6 +932,7 @@
 		"degreesE": 23,
 		"minutesE": 24,
 		"requirements": "",
-		"location": "Outside the Magic axe hut in level 56 Wilderness, north-east of the Deserted Keep. Jennica's ring is useful as you can access the Spirit Realm with the portal south of the building. Inside the Spirit Realm, you can teleport out of the Wilderness."
+		"location": "Outside the Magic axe hut in level 56 Wilderness, north-east of the Deserted Keep. Jennica's ring is useful as you can access the Spirit Realm with the portal south of the building. Inside the Spirit Realm, you can teleport out of the Wilderness.",
+		"image": "800px-Coordinate_clue_25.03N_23.24E.png"
 	}
 ]

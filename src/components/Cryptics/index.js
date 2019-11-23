@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import CrypticData from "../../clue_data/cryptics.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -36,7 +36,7 @@ class App extends Component {
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
 					<Col xs={1} id="hide-when-max-medium"></Col>
-					<Col lg={5} className="align-self-center" id="cryptic-tip-header">
+					<Col lg={5} className="align-self-center" id="tip-header">
 						<p className="margin-bottom-zero">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
 					</Col>
 					<Col>
@@ -60,7 +60,7 @@ class App extends Component {
 			<div>
 				<Row>
 					<Col xs={12}>
-						<p id="cryptic-tip-below-header">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
+						<p id="tip-below-header">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
 					</Col>
 				</Row>
 				<Row>

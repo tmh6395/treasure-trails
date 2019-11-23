@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import ScanData from "../../clue_data/scans.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -36,12 +36,12 @@ class App extends Component {
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
 					<Col xs={1} id="hide-when-max-medium"></Col>
-					<Col lg={5} className="align-self-center" id="scan-tip-header">
+					<Col lg={5} className="align-self-center" id="tip-header">
 						<p className="margin-bottom-zero">
-							<img src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location.png"} />
+							<img alt="Scan_clue_location.png not found" src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location.png"} />
 							= an exact location.</p>
 						<p className="margin-bottom-zero">
-							<img src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location_(approximate).png"} />
+							<img alt="Scan_clue_location_(approximate).png not found" src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location_(approximate).png"} />
 							= an approximate location.</p>
 					</Col>
 					<Col>
@@ -64,7 +64,7 @@ class App extends Component {
 
 			<div>
 				<Row>
-					<Col xs={12} className="align-self-center" id="scan-tip-below-header">
+					<Col xs={12} className="align-self-center" id="tip-below-header">
 						<p className="margin-bottom-zero">
 							<img src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location.png"} />
 							= an exact location.</p>

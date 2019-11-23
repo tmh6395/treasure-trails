@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import AnagramData from "../../clue_data/anagrams.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
