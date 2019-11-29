@@ -28,6 +28,7 @@ class App extends Component {
 	}
 
 	handleDegreesChange = () => {
+		console.log("this.degrees:", this.degrees);
 		this.setState({
 			inputDegreesNS: this.degrees.value
 		})
@@ -62,13 +63,14 @@ class App extends Component {
 	}
 
 	refreshAll = () => {
+		let input = document.getElementById("degrees-ns");
 		this.setState({
 			inputDegreesNS: '',
 			// buttonNorth: 0,
 			// buttonSouth: 0,
 			// buttonWest: 0,
 			// buttonEast: 0,
-		}, () => document.getElementById("degrees-ns-smaller").value = "", document.getElementById("degrees-ns-larger").value = "");
+		}, () => input.value = "");
 	}
 
 	toggleDirections = () => {
@@ -116,89 +118,67 @@ class App extends Component {
 					</Col>
 				</Row>
 				<Row>
-
-					{/* HIDE WHEN 769px & HIGHER */}
-
-					<Col xs={12} id="coordinate-inputs-smaller" className="coordinate-btn-column">
-						<div id="div-coordinate-options">
-							<Row className="btn-toolbar">
-								<Col></Col>
-
-								<Col xs={6} className="btn-toolbar">
-									<button
-										className="coordinate-btn"
-										id={this.state.buttonNorth ? 'btn-option-north-clicked' : 'btn-option-north-unclicked'}
-										onClick={this.toggleActiveNorth}>North
+					<Col xs={12} className="coordinate-btn-column">
+						<Row>
+							<Col xs={6} md={3} lg={2}>
+								<button
+									className="coordinate-btn"
+									id={this.state.buttonNorth ? 'btn-option-north-clicked' : 'btn-option-north-unclicked'}
+									onClick={this.toggleActiveNorth}>North
 									</button>
-								</Col>
-
-								<Col></Col>
-
-								<Col xs={6} className="btn-toolbar">
-									<button
-										className="coordinate-btn"
-										id={this.state.buttonSouth ? 'btn-option-south-clicked' : 'btn-option-south-unclicked'}
-										onClick={this.toggleActiveSouth}>South
+							</Col>
+							<Col xs={6} md={3} lg={2}>
+								<button
+									className="coordinate-btn"
+									id={this.state.buttonSouth ? 'btn-option-south-clicked' : 'btn-option-south-unclicked'}
+									onClick={this.toggleActiveSouth}>South
 								</button>
-								</Col>
+							</Col>
+							<Col></Col>
+						</Row>
 
-								<Col></Col>
-
-								{/* <Col className="hide-max-lg"></Col> */}
-
-								<Col xs={6} className="btn-toolbar">
-									<button className="coordinate-btn"
-										id={this.state.buttonWest ? 'btn-option-west-clicked' : 'btn-option-west-unclicked'}
-										onClick={this.toggleActiveWest}>West
+						<Row>
+							<Col xs={6} md={3} lg={2}>
+								<button
+									className="coordinate-btn"
+									id={this.state.buttonWest ? 'btn-option-west-clicked' : 'btn-option-west-unclicked'}
+									onClick={this.toggleActiveWest}>West
 									</button>
-								</Col>
-
-								<Col></Col>
-
-								<Col xs={6} className="btn-toolbar">
-									<button className="coordinate-btn"
-										id={this.state.buttonEast ? 'btn-option-east-clicked' : 'btn-option-east-unclicked'}
-										onClick={this.toggleActiveEast}>East
+							</Col>
+							<Col xs={6} md={3} lg={2}>
+								<button
+									className="coordinate-btn"
+									id={this.state.buttonEast ? 'btn-option-east-clicked' : 'btn-option-east-unclicked'}
+									onClick={this.toggleActiveEast}>East
 									</button>
-								</Col>
+							</Col>
+							<Col></Col>
+						</Row>
 
-								<Col></Col>
-
-								<Row>
-									<Col></Col>
-
-									{/* <Col className="hide-max-lg"></Col> */}
-
-									<Col xs={6} style={{ textAlign: "center" }}>
-										<input
-											className="coordinate-input"
-											id="degrees-ns-smaller"
-											type="number"
-											placeholder="degrees N/S"
-											min="0"
-											max="25"
-											ref={input => this.degrees = input}
-											onChange={this.handleDegreesChange} />
-									</Col>
-									
-									<Col></Col>
-
-									<Col xs={6} style={{ textAlign: "center" }}>
-										<button id="refresh-btn" onClick={this.refreshAll}>
-											<FontAwesomeIcon icon={faRedoAlt} />
-										</button>
-									</Col>
-
-									<Col></Col>
-
-								</Row>
-
-
-							</Row>
-						</div>
+						<Row>
+							<Col xs={6} md={3} lg={2}>
+								<input
+									className="coordinate-input"
+									id="degrees-ns"
+									type="number"
+									placeholder="degrees N/S"
+									min="0"
+									max="25"
+									ref={input => this.degrees = input}
+									onChange={this.handleDegreesChange} />
+							</Col>
+							<Col xs={6} md={3} lg={2}>
+								<button
+									id="refresh-btn"
+									onClick={this.refreshAll}>
+									<FontAwesomeIcon icon={faRedoAlt} />
+								</button>
+							</Col>
+							<Col></Col>
+						</Row>
 					</Col>
 
-					{/* HIDE WHEN 769px & HIGHER (end) */}
+
 
 
 
@@ -207,226 +187,160 @@ class App extends Component {
 
 					<Col xs={12} lg={7} id="result-container">
 
-						<div id="div-coordinate-results">
-							{/* show results based on the directional buttons that are active */}
-							{CoordinateData.map((coordinate, index) => {
-								coordinate.key = index;
+						{/* show results based on the directional buttons that are active */}
+						{CoordinateData.map((coordinate, index) => {
+							coordinate.key = index;
 
-								// Check if the North and West buttons are active
-								if (this.state.buttonNorth && this.state.buttonWest) {
-									// Only display the clues that have values equal to or greater than 0 N/W
-									if (coordinate.degreesN >= 0 && coordinate.minutesN >= 0 && coordinate.degreesW >= 0 && coordinate.minutesW >= 0) {
-										// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
-										if (this.state.inputDegreesNS == coordinate.degreesN) {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-														<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										} else if (this.state.inputDegreesNS == '') {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-														<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6} style={{ verticalAlign: "middle" }}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										}
-									}
-								}
-								// Check if the North and East buttons are active
-								else if (this.state.buttonNorth && this.state.buttonEast) {
-									// Only display the clues that have values equal to or greater than 0 N/E
-									if (coordinate.degreesN >= 0 && coordinate.minutesN >= 0 && coordinate.degreesE >= 0 && coordinate.minutesE >= 0) {
-										// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
-										if (this.state.inputDegreesNS == coordinate.degreesN) {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-														<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										} else if (this.state.inputDegreesNS == '') {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-														<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6} style={{ verticalAlign: "middle" }}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										}
-									}
-								}
-
-								// Check if the South and West buttons are active
-								else if (this.state.buttonSouth && this.state.buttonWest) {
-									if (coordinate.key === 0) {
+							// Check if the North and West buttons are active
+							if (this.state.buttonNorth && this.state.buttonWest) {
+								// Only display the clues that have values equal to or greater than 0 N/W
+								if (coordinate.degreesN >= 0 && coordinate.minutesN >= 0 && coordinate.degreesW >= 0 && coordinate.minutesW >= 0) {
+									// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
+									if (this.state.inputDegreesNS == coordinate.degreesN) {
 										return <div className="results" key={index}>
-											<p>There are no coordinate clues that point in the south-west direction.</p>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6} style={{ verticalAlign: "middle" }}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
+										</div>
+									} else if (this.state.inputDegreesNS == '') {
+										return <div className="results" key={index}>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6} style={{ verticalAlign: "middle" }}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
 										</div>
 									}
 								}
-
-								// Check if the South and East buttons are active
-								else if (this.state.buttonSouth && this.state.buttonEast) {
-									// Only display the clues that have values equal to or greater than 0 S/E
-									if (coordinate.degreesS >= 0 && coordinate.minutesS >= 0 && coordinate.degreesE >= 0 && coordinate.minutesE >= 0) {
-										// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
-										if (this.state.inputDegreesNS == coordinate.degreesS) {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-														<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										} else if (this.state.inputDegreesNS == '') {
-											return <div className="results" style={{ display: "flex" }} key={index}>
-												<Row>
-													<Col xs={6}>
-														<span>Coordinates:</span>
-														<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-														<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-														<span>Location:</span>
-														<p>{coordinate.location}</p>
-													</Col>
-													<Col xs={6} style={{ verticalAlign: "middle" }}>
-														<img
-															alt="coordinate_image_failed_to_load"
-															src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
-														/>
-													</Col>
-												</Row>
-											</div>
-										}
+							}
+							// Check if the North and East buttons are active
+							else if (this.state.buttonNorth && this.state.buttonEast) {
+								// Only display the clues that have values equal to or greater than 0 N/E
+								if (coordinate.degreesN >= 0 && coordinate.minutesN >= 0 && coordinate.degreesE >= 0 && coordinate.minutesE >= 0) {
+									// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
+									if (this.state.inputDegreesNS == coordinate.degreesN) {
+										return <div className="results" key={index}>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
+										</div>
+									} else if (this.state.inputDegreesNS == '') {
+										return <div className="results" key={index}>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6} style={{ verticalAlign: "middle" }}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
+										</div>
 									}
 								}
-							})}
-						</div>
+							}
 
+							// Check if the South and West buttons are active
+							else if (this.state.buttonSouth && this.state.buttonWest) {
+								if (coordinate.key === 0) {
+									return <div className="results" key={index}>
+										<p>There are no coordinate clues that point in the south-west direction.</p>
+									</div>
+								}
+							}
+
+							// Check if the South and East buttons are active
+							else if (this.state.buttonSouth && this.state.buttonEast) {
+								// Only display the clues that have values equal to or greater than 0 S/E
+								if (coordinate.degreesS >= 0 && coordinate.minutesS >= 0 && coordinate.degreesE >= 0 && coordinate.minutesE >= 0) {
+									// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
+									if (this.state.inputDegreesNS == coordinate.degreesS) {
+										return <div className="results" key={index}>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
+										</div>
+									} else if (this.state.inputDegreesNS == '') {
+										return <div className="results" key={index}>
+											<Row>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+												<Col xs={6}>
+													<img
+														className="coordinate-images"
+														alt="coordinate_image_failed_to_load"
+														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
+													/>
+												</Col>
+											</Row>
+										</div>
+									}
+								}
+							}
+						})}
 					</Col>
-
-					{/* HIDE WHEN 768px & LOWER */}
-
-					<Col xs={3} id="coordinate-inputs-larger" className="coordinate-btn-column">
-						<div id="div-coordinate-options">
-							<Row className="btn-toolbar">
-								<Col className="hide-max-lg"></Col>
-								<Col className="btn-toolbar">
-									<button
-										className="coordinate-btn"
-										id={this.state.buttonNorth ? 'btn-option-north-clicked' : 'btn-option-north-unclicked'}
-										onClick={this.toggleActiveNorth}>North
-									</button>
-								</Col>
-								<Col></Col>
-								<Col className="btn-toolbar">
-									<button
-										className="coordinate-btn"
-										id={this.state.buttonSouth ? 'btn-option-south-clicked' : 'btn-option-south-unclicked'}
-										onClick={this.toggleActiveSouth}>South
-								</button>
-								</Col>
-								<Col></Col>
-							</Row>
-
-							<Row>
-								<Col className="hide-max-lg"></Col>
-								<Col className="btn-toolbar">
-									<button className="coordinate-btn"
-										id={this.state.buttonWest ? 'btn-option-west-clicked' : 'btn-option-west-unclicked'}
-										onClick={this.toggleActiveWest}>West
-									</button>
-								</Col>
-								<Col></Col>
-								<Col className="btn-toolbar">
-									<button className="coordinate-btn"
-										id={this.state.buttonEast ? 'btn-option-east-clicked' : 'btn-option-east-unclicked'}
-										onClick={this.toggleActiveEast}>East
-									</button>
-								</Col>
-								<Col></Col>
-							</Row>
-
-							<Row>
-								<Col className="hide-max-lg"></Col>
-								<Col>
-									<input
-										className="coordinate-input"
-										id="degrees-ns-larger"
-										type="number"
-										placeholder="degrees N/S"
-										min="0"
-										max="25"
-										ref={input => this.degrees = input}
-										onChange={this.handleDegreesChange} />
-								</Col>
-								<Col></Col>
-								<Col>
-									<button id="refresh-btn" onClick={this.refreshAll}>
-										<FontAwesomeIcon icon={faRedoAlt} />
-									</button>
-								</Col>
-								<Col></Col>
-							</Row>
-						</div>
-					</Col>
-
-					{/* HIDE WHEN 768px & LOWER (end) */}
-
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">

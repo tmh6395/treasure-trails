@@ -159,11 +159,11 @@ img{
 
 
 .coordinate-btn-column{
-	margin-left: -2rem;
+	text-align: center;
 }
 
 .coordinate-btn{
-	width: 10rem;
+	width: 100%;
 	margin: 1rem auto;
 	padding: 1rem;
 	font-size: 2rem;
@@ -171,9 +171,13 @@ img{
 }
 
 .coordinate-input, #refresh-btn{
-	width: 10rem;
-	padding: 1rem;
+	width: 100%;
+	padding: 0.5rem;
 	font-size: 1rem;
+}
+
+.coordinate-images{
+	width: 100%;
 }
 
 #btn-option-north-unclicked, #btn-option-south-unclicked, #btn-option-west-unclicked, #btn-option-east-unclicked{
@@ -249,8 +253,24 @@ hr{
 	margin: 1rem auto;
 }
 
+.margin-left-coordinate-btn{
+	margin-left: 1rem;
+}
+
+.margin-right-coordinate-btn{
+	margin-right: 1rem;
+}
+
 .margin-bottom-zero{
 	margin-bottom: 0;
+}
+
+#degrees-ns-smaller{
+	background-color: orange;
+}
+
+#degrees-ns-larger{
+	background-color: yellow;
 }
 
 @media only screen and (min-width: 1025px){
@@ -267,15 +287,9 @@ hr{
 }
 
 @media only screen and (max-width: 1024px){
-	.coordinate-btn, .coordinate-input, #refresh-btn{
-		width: 8rem;
-	}
-	.coordinate-btn-column{
-		margin-left: -1.5rem;
-	}
-	.hide-max-lg{
-		display: none;
-	}
+	/* .coordinate-btn, .coordinate-input, #refresh-btn{
+		width: 100%;
+	} */
 }
 
 @media only screen and (max-width: 1023px){
@@ -292,7 +306,7 @@ hr{
 	#search-form{
 		min-height: 98px;
 	}
-	#btn-to-home, #coordinate-inputs-smaller{
+	#btn-to-home{
 		display: none;
 	}
 }
@@ -311,7 +325,7 @@ hr{
 		right: 0;
 		bottom: 0;
 	}
-	#tip-header, #hide-when-max-medium, #coordinate-inputs-larger{
+	#tip-header{
 		display: none;
 	}
 	#tip-below-header{
@@ -319,6 +333,9 @@ hr{
 	}
 	.coordinate-btn-column{
 		margin-left: 0;
+	}
+	.coordinate-btn, .coordinate-input, #refresh-btn{
+		width: 100%;
 	}
 }
 
