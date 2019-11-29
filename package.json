@@ -2,16 +2,16 @@
   "name": "treasure_trails",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tmh6395.github.io/treasure-trails-helper/",
+  "homepage": "https://tmh6395.github.io/treasure-trails/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "gh-pages": "^2.1.1",
-    "react": "^16.11.0",
-    "react-bootstrap": "^1.0.0-beta.14",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "set-value": "^2.0.1"
   }
 }

@@ -94,7 +94,7 @@ class App extends Component {
 				<Row className="header-row">
 					<Col xs={1} id="hide-when-max-medium"></Col>
 					<Col lg={5} className="align-self-center" id="tip-header">
-						<p className="margin-bottom-zero">• Tip: The shorthand for the coordinates is in the format: degrees°minutes.</p>
+						<p className="margin-bottom-zero">• Tip: click the relevant boxes, and enter the degrees for north/south into the input box.</p>
 					</Col>
 					<Col>
 						<button id="btn-to-home">
@@ -107,7 +107,7 @@ class App extends Component {
 			<div>
 				<Row>
 					<Col xs={12}>
-						<p id="tip-below-header">• Tip: The shorthand for the coordinates is in the format: degrees°minutes.</p>
+						<p id="tip-below-header">• Tip: click the relevant boxes, and enter the degrees for north/south into the input box.</p>
 					</Col>
 				</Row>
 				<Row>
