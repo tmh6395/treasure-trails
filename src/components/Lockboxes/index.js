@@ -34,9 +34,6 @@ class App extends Component {
 
 	switchImage = (lockboxId) => {
 		let lockboxImage = document.getElementById(lockboxId);
-		console.log("lockboxImage:", lockboxImage);
-		console.log("lockboxImage.id:", lockboxImage.id);
-		console.log("lockboxImage.src:", lockboxImage.src);
 
 		// This switches the <img>'s src attribute to change it from unsolved to solution, or vice-versa, when clicked
 		if (lockboxImage.src === (window.location.origin + process.env.PUBLIC_URL + "/images/lockboxes/300px-Lockbox_example_" + lockboxImage.id + "_unsolved.png")) {

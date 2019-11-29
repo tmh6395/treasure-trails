@@ -28,7 +28,6 @@ class App extends Component {
 	}
 
 	handleDegreesChange = () => {
-		console.log("this.degrees:", this.degrees);
 		this.setState({
 			inputDegreesNS: this.degrees.value
 		})
@@ -66,10 +65,6 @@ class App extends Component {
 		let input = document.getElementById("degrees-ns");
 		this.setState({
 			inputDegreesNS: '',
-			// buttonNorth: 0,
-			// buttonSouth: 0,
-			// buttonWest: 0,
-			// buttonEast: 0,
 		}, () => input.value = "");
 	}
 
@@ -82,7 +77,6 @@ class App extends Component {
 			directions.style.display = "block";
 		}
 	}
-
 
 	render() {
 
@@ -109,7 +103,6 @@ class App extends Component {
 					</Col>
 				</Row>
 			</form>
-
 
 			<div>
 				<Row>
@@ -178,15 +171,7 @@ class App extends Component {
 						</Row>
 					</Col>
 
-
-
-
-
-
-
-
 					<Col xs={12} lg={7} id="result-container">
-
 						{/* show results based on the directional buttons that are active */}
 						{CoordinateData.map((coordinate, index) => {
 							coordinate.key = index;

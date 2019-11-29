@@ -52,7 +52,7 @@ class App extends Component {
 						</button>
 					</Col>
 					<Col xs={8} className="align-self-center">
-						<p className="margin-bottom-zero">• Click a map to toggle between its clue scroll and overworld variants.</p>
+						<p className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
 					</Col>
 				</Row>
 			</form>

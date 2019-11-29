@@ -62,7 +62,6 @@ class App extends Component {
 
 							if (riddle.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
 
-
 								return <div className="results" key={index}>
 									<span>Riddle:</span>
 									<p>{riddle.riddle}</p>
@@ -79,9 +78,6 @@ class App extends Component {
 										<p>{riddle.requirements.skills}</p>
 									</div>
 								</div>
-
-
-
 							}
 						})}
 					</Col>

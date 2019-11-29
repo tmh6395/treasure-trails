@@ -180,6 +180,10 @@ img{
 	width: 100%;
 }
 
+.cryptic-images{
+	width: 100%;
+}
+
 #btn-option-north-unclicked, #btn-option-south-unclicked, #btn-option-west-unclicked, #btn-option-east-unclicked{
 	color: rgb(240, 240, 100);
 	background-color: #253f74;

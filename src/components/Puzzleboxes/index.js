@@ -65,7 +65,7 @@ class App extends Component {
 
 						<div className="side-menu-current">
 							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
-							<p className="margin-bottom-zero"><span className="span-no-underline">Puzzle Boxes</span></p>
+							<p className="margin-bottom-zero"><span className="span-no-underline">Puzzle Box Guide</span></p>
 						</div>
 
 						<hr className="side-menu-hr" />

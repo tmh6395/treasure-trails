@@ -264,16 +264,16 @@
 		"challenge": "Puzzle Box"
 	},
 	{
+		"question": "QUIT THY BRINE RAT ROLL",
+		"answer": "Brother Tranquillity",
+		"location": "Either on Mos Le'Harmless (To begin The Great Brain Robbery and travel to Harmony Island) or Harmony Island (During and after The Great Brain Robbery).",
+		"challenge": "N/A"
+	},
+	{
 		"question": "R Ak Mi",
 		"answer": "Karim",
 		"location": "Al Kharid, Kebab shop south of the furnace.",
 		"challenge": "5"
-	},
-	{
-		"question": "Rebirth Not Ritually",
-		"answer": "Brother Tranquility",
-		"location": "Mos Le'Harmless docks or Harmony Island (during and after The Great Brain Robbery).",
-		"challenge": "N/A"
 	},
 	{
 		"question": "Red Art Tans",

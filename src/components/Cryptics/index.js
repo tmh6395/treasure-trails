@@ -71,17 +71,33 @@ class App extends Component {
 
 							if (cryptic.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<span>Cryptic:</span>
-									<p className="question-text">{cryptic.riddle}</p>
-									<div style={{ marginBottom: "1rem" }}><span>Solution:</span></div>
-
-									<img style={{ paddingBottom: "1rem" }} alt="cryptic_image_failed_to_load" src={process.env.PUBLIC_URL + '/images/cryptics_locations/' + crypticImage} />
-
-									<p>{cryptic.answer}</p>
-									<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
-										<hr />
-										<p><span>Key Info:</span> {cryptic.keyInfo}</p>
-									</div>
+									<Row>
+										<Col xs={12}>
+											<span>Cryptic:</span>
+											<p className="question-text">{cryptic.riddle}</p>
+										</Col>
+									</Row>
+									<Row>
+										<Col>
+											<div style={cryptic.keyInfo === "N/A" ? { display: "none" } : { display: "block" }}>
+												<hr />
+												<span>Key Info:</span>
+												<p>{cryptic.keyInfo}</p>
+											</div>
+										</Col>
+									</Row>
+									<Row>
+										<Col xs={12} md={6}>
+											<img
+												className="cryptic-images"
+												alt="cryptic_image_failed_to_load"
+												src={process.env.PUBLIC_URL + '/images/cryptics_locations/' + crypticImage} />
+										</Col>
+										<Col xs={12} md={6}>
+											<span>Solution:</span>
+											<p>{cryptic.answer}</p>
+										</Col>
+									</Row>
 								</div>
 							}
 						})}
