@@ -38,7 +38,7 @@ class App extends Component {
 				<Row className="header-row">
 					<Col>
 						<button id="btn-to-home">
-							<Link to={"/treasure-trails-helper"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
 					<Col xs={7} lg={5} xl={4} className="align-self-center">
@@ -84,11 +84,7 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						{/* <Link
-							to={"/treasure-trails-helper"}>
-							<p className="side-menu-options">Home</p>
-						</Link> */}
-
+						
 						<div className="side-menu-current">
 							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
 							<p className="margin-bottom-zero"><span className="span-no-underline">Skilling Riddles</span></p>
@@ -97,42 +93,42 @@ class App extends Component {
 						<hr className="side-menu-hr" />
 
 						<Link
-							to={"/treasure-trails-helper/anagrams"}>
+							to={"/treasure-trails/anagrams"}>
 							<p className="side-menu-options">Anagrams</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/challenges"}>
+							to={"/treasure-trails/challenges"}>
 							<p className="side-menu-options">Challenges</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/coordinates"}>
+							to={"/treasure-trails/coordinates"}>
 							<p className="side-menu-options">Coordinates</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/cryptics"}>
+							to={"/treasure-trails/cryptics"}>
 							<p className="side-menu-options">Cryptics</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/lockboxes"}>
+							to={"/treasure-trails/lockboxes"}>
 							<p className="side-menu-options">Lockboxes</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/maps"}>
+							to={"/treasure-trails/maps"}>
 							<p className="side-menu-options">Maps</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/puzzleboxguide"}>
+							to={"/treasure-trails/puzzleboxguide"}>
 							<p className="side-menu-options">Puzzle Box Guide</p>
 						</Link>
 
 						<Link
-							to={"/treasure-trails-helper/scans"}>
+							to={"/treasure-trails/scans"}>
 							<p className="side-menu-options">Scans</p>
 						</Link>
 					</Col>
