@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
 import CoordinateData from "../../clue_data/coordinates.json";
+import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -92,9 +93,9 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={1} id="hide-when-max-medium"></Col>
-					<Col lg={5} className="align-self-center" id="tip-header">
-						<p className="margin-bottom-zero">• Tip: click the relevant boxes, and enter the degrees for north/south into the input box.</p>
+					<Col xs={1} id="hide-when-md"></Col>
+					<Col lg={6} className="align-self-center" id="tip-header">
+						<p className="margin-bottom-zero">• Click the relevant boxes, then enter the degrees for north/south into the input box.</p>
 					</Col>
 					<Col>
 						<button id="btn-to-home">
@@ -107,7 +108,7 @@ class App extends Component {
 			<div>
 				<Row>
 					<Col xs={12}>
-						<p id="tip-below-header">• Tip: click the relevant boxes, and enter the degrees for north/south into the input box.</p>
+						<p id="tip-below-header">• Click the relevant boxes, then enter the degrees for north/south into the input box.</p>
 					</Col>
 				</Row>
 				<Row>
@@ -184,38 +185,38 @@ class App extends Component {
 									if (this.state.inputDegreesNS == coordinate.degreesN) {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
 												<Col xs={6} style={{ verticalAlign: "middle" }}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
 									} else if (this.state.inputDegreesNS == '') {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
 												<Col xs={6} style={{ verticalAlign: "middle" }}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
@@ -231,37 +232,37 @@ class App extends Component {
 										return <div className="results" key={index}>
 											<Row>
 												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
-												<Col xs={6}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
 									} else if (this.state.inputDegreesNS == '') {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
 												<Col xs={6} style={{ verticalAlign: "middle" }}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
@@ -287,18 +288,18 @@ class App extends Component {
 										return <div className="results" key={index}>
 											<Row>
 												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
-												<Col xs={6}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
@@ -306,18 +307,18 @@ class App extends Component {
 										return <div className="results" key={index}>
 											<Row>
 												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
-												<Col xs={6}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
+												</Col>
+												<Col xs={6}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
@@ -380,18 +381,7 @@ class App extends Component {
 				</Row>
 			</div>
 
-			<div>
-				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
-					<Col>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
-				</Row>
-			</div>
+			<BtnToTop />
 		</>);
 	}
 }

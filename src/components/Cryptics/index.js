@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import CrypticData from "../../clue_data/cryptics.json";
+import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -35,7 +36,7 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={1} id="hide-when-max-medium"></Col>
+					<Col xs={1} id="hide-when-md"></Col>
 					<Col lg={5} className="align-self-center" id="tip-header">
 						<p className="margin-bottom-zero">• If a cryptic clue requires a key, then you should get the key first to save time.</p>
 					</Col>
@@ -156,18 +157,7 @@ class App extends Component {
 				</Row>
 			</div>
 
-			<div>
-				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
-					<Col>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
-				</Row>
-			</div>
+			<BtnToTop />
 		</>);
 	}
 }

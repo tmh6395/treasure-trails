@@ -1,0 +1,24 @@
+#btn-to-top{
+
+	color: rgb(240, 240, 100);
+	background-color: rgb(7, 16, 34);
+	border: 0px;
+	border-radius: 10px;
+	position: fixed;
+	display: none;
+	font-size: 2rem;
+	right: 2rem;
+	bottom: 0.5rem;
+	opacity: 0.6 !important;
+}
+
+#btn-to-top:active, #btn-to-top:focus{
+	outline: 0;
+}
+
+@media only screen and (max-width: 768px){
+	#btn-to-top{
+		right: 0;
+		bottom: 0;
+	}
+}

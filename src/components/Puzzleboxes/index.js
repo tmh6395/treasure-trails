@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -58,7 +59,7 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						
+
 						<div className="side-menu-current">
 							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
 							<p className="margin-bottom-zero"><span className="span-no-underline">Puzzle Box Guide</span></p>
@@ -109,18 +110,7 @@ class App extends Component {
 				</Row>
 			</div>
 
-			<div>
-				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
-					<Col>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
-				</Row>
-			</div>
+			<BtnToTop />
 		</>);
 	}
 }

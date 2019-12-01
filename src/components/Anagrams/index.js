@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import AnagramData from "../../clue_data/anagrams.json";
+import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -23,15 +24,6 @@ class App extends Component {
 	}
 
 	render() {
-
-		window.onscroll = () => {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				document.getElementById("btn-to-top").style.display = "block";
-			}
-			else {
-				document.getElementById("btn-to-top").style.display = "none";
-			}
-		}
 
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
@@ -131,18 +123,7 @@ class App extends Component {
 				</Row>
 			</div>
 
-			<div>
-				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
-					<Col>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
-				</Row>
-			</div>
+			<BtnToTop />
 		</>);
 	}
 }

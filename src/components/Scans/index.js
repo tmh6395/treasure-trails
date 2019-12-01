@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import ScanData from "../../clue_data/scans.json";
+import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -35,7 +36,7 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={1} id="hide-when-max-medium"></Col>
+					<Col xs={1} id="hide-when-md"></Col>
 					<Col lg={5} className="align-self-center" id="tip-header">
 						<p className="margin-bottom-zero">
 							<img alt="Scan_clue_location.png not found" src={process.env.PUBLIC_URL + "/images/scans_locations/Scan_clue_location.png"} />
@@ -96,7 +97,7 @@ class App extends Component {
 
 					{/* side menu links */}
 					<Col lg={3} xl={2} id="side-design">
-						
+
 						<div className="side-menu-current">
 							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
 							<p className="margin-bottom-zero"><span className="span-no-underline">Scans</span></p>
@@ -147,18 +148,7 @@ class App extends Component {
 				</Row>
 			</div>
 
-			<div>
-				<Row>
-					<Col xs={12} lg={7} xl={8}></Col>
-					<Col>
-						<button id="btn-to-top" onClick={() => window.scrollTo(0, 0)}>
-							<Link to={"#"} id="link-to-top">
-								<FontAwesomeIcon icon={faArrowUp} />
-							</Link>
-						</button>
-					</Col>
-				</Row>
-			</div>
+			<BtnToTop />
 		</>);
 	}
 }
