@@ -47,7 +47,7 @@ class App extends Component {
 			</form>
 
 			<div>
-				<Row>
+				<Row style={{ backgroundColor: "#313e59" }}>
 					<Col xs={12} lg={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
 						{AnagramData.map((anagram, index) => {

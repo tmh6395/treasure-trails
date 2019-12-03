@@ -45,14 +45,15 @@ class App extends Component {
 
 	render() {
 		return (<>
+			{/* anagrams */}
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={4} md={3} lg={1}>
+					<Col>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
-					<Col xs={8} className="align-self-center">
+					<Col xs={8} id="tip-header-searchless" className="align-self-center">
 						<p className="margin-bottom-zero">• Click on an image to toggle its solution. Click each title the number of times listed on it.</p>
 					</Col>
 				</Row>
@@ -60,11 +61,16 @@ class App extends Component {
 
 			<div>
 				<Row>
+					<Col xs={12}>
+						<p id="tip-below-header-searchless" className="margin-bottom-zero">• Click on an image to toggle its solution. Click each title the number of times listed on it.</p>
+					</Col>
+				</Row>
+				<Row>
 					<Col xs={12} lg={9} id="result-container">
 
 						{LockboxData.map((lockbox, index) => {
 
-							return (<div key={index} className="div-lockboxes" style={{ display: "inline-block", padding: "1rem" }}>
+							return (<div key={index} className="div-lockboxes">
 								<p className="text-lockbox-patterns">Lockbox Pattern {index + 1}</p>
 								<img
 									id={lockbox.number}

@@ -36,18 +36,23 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={4} md={3} lg={1}>
+					<Col>
 						<button id="btn-to-home" className="btn-to-home-map">
 							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
 					<Col xs={8} className="align-self-center">
-						<p className="margin-bottom-zero">• Complete the puzzle by solving each group of tiles in order of 1-6.</p>
+						<p id="tip-header-searchless" className="margin-bottom-zero">• Complete the puzzle by solving each group of tiles in order of 1-6.</p>
 					</Col>
 				</Row>
 			</form>
 
 			<div>
+				<Row>
+					<Col xs={12}>
+						<p id="tip-below-header-searchless" className="margin-bottom-zero">• Complete the puzzle by solving each group of tiles in order of 1-6.</p>
+					</Col>
+				</Row>
 				<Row>
 					<Col md={2} lg={2}></Col>
 					<Col xs={12} md={8} lg={5} id="result-container">

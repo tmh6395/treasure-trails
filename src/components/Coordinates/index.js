@@ -119,7 +119,7 @@ class App extends Component {
 									className="coordinate-btn"
 									id={this.state.buttonNorth ? 'btn-option-north-clicked' : 'btn-option-north-unclicked'}
 									onClick={this.toggleActiveNorth}>North
-									</button>
+								</button>
 							</Col>
 							<Col xs={6} md={3} lg={2}>
 								<button
@@ -137,14 +137,14 @@ class App extends Component {
 									className="coordinate-btn"
 									id={this.state.buttonWest ? 'btn-option-west-clicked' : 'btn-option-west-unclicked'}
 									onClick={this.toggleActiveWest}>West
-									</button>
+								</button>
 							</Col>
 							<Col xs={6} md={3} lg={2}>
 								<button
 									className="coordinate-btn"
 									id={this.state.buttonEast ? 'btn-option-east-clicked' : 'btn-option-east-unclicked'}
 									onClick={this.toggleActiveEast}>East
-									</button>
+								</button>
 							</Col>
 							<Col></Col>
 						</Row>
@@ -172,7 +172,7 @@ class App extends Component {
 						</Row>
 					</Col>
 
-					<Col xs={12} lg={7} id="result-container">
+					<Col xs={12} lg={8} xl={6} id="result-container">
 						{/* show results based on the directional buttons that are active */}
 						{CoordinateData.map((coordinate, index) => {
 							coordinate.key = index;
@@ -181,48 +181,57 @@ class App extends Component {
 							if (this.state.buttonNorth && this.state.buttonWest) {
 								// Only display the clues that have values equal to or greater than 0 N/W
 								if (coordinate.degreesN >= 0 && coordinate.minutesN >= 0 && coordinate.degreesW >= 0 && coordinate.minutesW >= 0) {
-									// Show all clues if #input-ns is empty, otherwise show where coordinate.degreesN === #input-ns
+									// Show where coordinate.degreesN === #input-ns, otherwise show all clues if #input-ns is empty 
 									if (this.state.inputDegreesNS == coordinate.degreesN) {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6} style={{ verticalAlign: "middle" }}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
-												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
 									} else if (this.state.inputDegreesNS == '') {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6} style={{ verticalAlign: "middle" }}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
 												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesW}°{coordinate.minutesW} W</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
-												</Col>
 											</Row>
 										</div>
 									}
 								}
 							}
+
 							// Check if the North and East buttons are active
 							else if (this.state.buttonNorth && this.state.buttonEast) {
 								// Only display the clues that have values equal to or greater than 0 N/E
@@ -231,38 +240,46 @@ class App extends Component {
 									if (this.state.inputDegreesNS == coordinate.degreesN) {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
-												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
 									} else if (this.state.inputDegreesNS == '') {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6} style={{ verticalAlign: "middle" }}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
-												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesN}°{coordinate.minutesN} N</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
@@ -287,38 +304,46 @@ class App extends Component {
 									if (this.state.inputDegreesNS == coordinate.degreesS) {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
-												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>
 									} else if (this.state.inputDegreesNS == '') {
 										return <div className="results" key={index}>
 											<Row>
-												<Col xs={6}>
+												<Col xs={12} style={{ verticalAlign: "middle" }}>
+													<span>Coordinates:</span>
+													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
+													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
+												</Col>
+												<Col xs={12}>
+													<span>Location:</span>
+													<p>{coordinate.location}</p>
+												</Col>
+											</Row>
+											<Row>
+												<Col xs={12} xl={8}>
 													<img
 														className="coordinate-images"
 														alt="coordinate_image_failed_to_load"
 														src={window.location.origin + process.env.PUBLIC_URL + "/images/coordinates_locations/" + coordinate.image}
 													/>
-												</Col>
-												<Col xs={6}>
-													<span>Coordinates:</span>
-													<p>{coordinate.degreesS}°{coordinate.minutesS} S</p>
-													<p>{coordinate.degreesE}°{coordinate.minutesE} E</p>
-													<span>Location:</span>
-													<p>{coordinate.location}</p>
 												</Col>
 											</Row>
 										</div>

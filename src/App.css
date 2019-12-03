@@ -1,7 +1,6 @@
 /* ************************************ CSS FOR APP.JS BELOW ************************************ */
-
 html, body, #root, #main-row-routes, #main-design{
-	height: 100%;
+	min-height: 100%;
 	/* background-color: #253f74; */
 	background-color: #313e59;
 	/* height: 100%; */
@@ -24,10 +23,6 @@ body{
   padding: 0;
 }
 
-#main-row-routes{
-	background-color: #313e59;
-}
-
 p{
 	color: #cbd9f4;
 	font-family: Helvetica;
@@ -39,18 +34,19 @@ p{
 	font-size: 24pt;
 }
 
-.range-text{
-	margin-bottom: 0;
-}
-
 span{
 	color: rgb(197, 184, 255);
 	text-decoration: underline;
+	font-size: 16pt;
 }
 
 .span-no-underline{
 	text-decoration: none;
 }
+.range-text{
+	margin-bottom: 0;
+}
+
 
 
 /* ************************************ CSS FOR COMPONENTS BELOW ************************************ */
@@ -62,6 +58,7 @@ span{
 
 #main-col-links{
 	align-self: center;
+	background-color: #172136;
 }
 
 .main-menu-options{
@@ -128,7 +125,7 @@ span{
 
 .results{
 	background-color: #172136;
-	padding: 1rem 2rem 1rem 1.5rem;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
 	margin: 1rem;
 	font-size: calc(5px + 2vmin);
 	border-radius: 10px;
@@ -219,22 +216,27 @@ hr{
 	margin: 0 1rem 1rem;
 }
 
-#tip-header{
+#tip-header, #tip-header-searchless{
 	margin-bottom: 0;
 	align-self: center;
 }
 
-#tip-below-header{
+#tip-below-header, #tip-below-header-searchless{
 	margin-bottom: 0;
 	display: none;
 }
 
+.div-lockboxes{
+	display: inline-block;
+	padding: 1rem;
+}
+
 #lockbox-unsolved{
-	display: "block";
+	display: block;
 }
 
 #lockbox-solved{
-	display: "none";
+	display: none;
 }
 
 .map-results{
@@ -297,7 +299,7 @@ hr{
 		margin: 1rem auto;
 	}
 	.btn-to-home-map{
-		margin-left: 2rem !important;
+		/* margin-left: 2rem !important; */
 	}
 	#tip-header, #hide-when-md{
 		display: none;
@@ -314,29 +316,33 @@ hr{
 }
 
 @media only screen and (max-width: 425px){
-	p{
-		font-size: 11pt;
-	}
 	.question-text{
-		font-size: 16pt;
+		font-size: 20pt;
 	}
 	#result-container{
 		padding: 0;
 	}
 	.results{
-		padding: 0.5rem;
+		padding: 1rem;
 		margin: 1rem 0.5rem;
 	}
 	img{
 		padding-bottom: 0;
 	}
+	#tip-header-searchless{
+		display: none;
+	}
+	#tip-below-header-searchless{
+		display: block;
+	}
 	.cryptic-question-text{
 		font-size: 12pt;
 	}
-	.btn-to-home-map{
-		margin-left: 0rem !important;
-	}
 	.div-lockboxes{
 		margin: 0 1rem;
+		display: block;
+	}
+	.lockbox-images{
+		width: 100%;
 	}
 }

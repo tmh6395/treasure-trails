@@ -47,18 +47,23 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
-					<Col xs={4} md={3} lg={1}>
+					<Col>
 						<button id="btn-to-home" className="btn-to-home-map">
 							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
 					</Col>
 					<Col xs={8} className="align-self-center">
-						<p className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
+						<p id="tip-header-searchless" className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
 					</Col>
 				</Row>
 			</form>
 
 			<div>
+				<Row>
+					<Col xs={12}>
+						<p id="tip-below-header-searchless" className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
+					</Col>
+				</Row>
 				<Row>
 					<Col xs={12} lg={9} xl={10} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
