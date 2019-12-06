@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/treasure-trails/static/css/main.6ef6a5cc.chunk.css",
-    "main.js": "/treasure-trails/static/js/main.2016b6b8.chunk.js",
-    "main.js.map": "/treasure-trails/static/js/main.2016b6b8.chunk.js.map",
+    "main.css": "/treasure-trails/static/css/main.7e150fa2.chunk.css",
+    "main.js": "/treasure-trails/static/js/main.e2da4dbd.chunk.js",
+    "main.js.map": "/treasure-trails/static/js/main.e2da4dbd.chunk.js.map",
     "runtime-main.js": "/treasure-trails/static/js/runtime-main.18dc96a5.js",
     "runtime-main.js.map": "/treasure-trails/static/js/runtime-main.18dc96a5.js.map",
     "static/css/2.17e5ed98.chunk.css": "/treasure-trails/static/css/2.17e5ed98.chunk.css",
     "static/js/2.e00434c8.chunk.js": "/treasure-trails/static/js/2.e00434c8.chunk.js",
     "static/js/2.e00434c8.chunk.js.map": "/treasure-trails/static/js/2.e00434c8.chunk.js.map",
     "index.html": "/treasure-trails/index.html",
-    "precache-manifest.ccba05d3acd3ebb5b9fa7283d82d72b5.js": "/treasure-trails/precache-manifest.ccba05d3acd3ebb5b9fa7283d82d72b5.js",
+    "precache-manifest.624611a544341ff788f4544dc7d95d8e.js": "/treasure-trails/precache-manifest.624611a544341ff788f4544dc7d95d8e.js",
     "service-worker.js": "/treasure-trails/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/treasure-trails/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.6ef6a5cc.chunk.css.map": "/treasure-trails/static/css/main.6ef6a5cc.chunk.css.map"
+    "static/css/main.7e150fa2.chunk.css.map": "/treasure-trails/static/css/main.7e150fa2.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.18dc96a5.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.e00434c8.chunk.js",
-    "static/css/main.6ef6a5cc.chunk.css",
-    "static/js/main.2016b6b8.chunk.js"
+    "static/css/main.7e150fa2.chunk.css",
+    "static/js/main.e2da4dbd.chunk.js"
   ]
 }
