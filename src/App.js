@@ -8,6 +8,7 @@ import Lockboxes from "./components/Lockboxes/index";
 import Maps from "./components/Maps";
 import Puzzlebox from "./components/Puzzleboxes/index";
 import Scans from "./components/Scans/index";
+import SimpleClues from "./components/SimpleClues/index";
 import SkillingRiddles from "./components/SkillingRiddles/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,6 +32,7 @@ class App extends Component {
               <Route exact path="/treasure-trails/maps" component={Maps} />
               <Route exact path="/treasure-trails/puzzleboxguide" component={Puzzlebox} />
               <Route exact path="/treasure-trails/scans" component={Scans} />
+              <Route exact path="/treasure-trails/simpleclues" component={SimpleClues} />
               <Route exact path="/treasure-trails/skillingriddles" component={SkillingRiddles} />
               {/* next step: maybe make a route for simple clues?
             https://runescape.wiki/w/Treasure_Trails/Guide/Simple_clues

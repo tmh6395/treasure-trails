@@ -51,6 +51,11 @@ class Home extends Component {
 						</Link>
 						
 						<Link
+							to={"/treasure-trails/simpleclues"}>
+							<p className="main-menu-options">Simple Clues</p>
+						</Link>
+						
+						<Link
 							to={"/treasure-trails/skillingriddles"}>
 							<p className="main-menu-options">Skilling Riddles</p>
 						</Link>

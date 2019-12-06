@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import SkillingRiddleData from "../../clue_data/skillingriddles.json";
+import { faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import SimpleClueData from "../../clue_data/simpleclues.json";
 import BtnToTop from "../ButtonToTop";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -24,7 +24,6 @@ class App extends Component {
 	}
 
 	render() {
-
 		window.onscroll = () => {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				document.getElementById("btn-to-top").style.display = "block";
@@ -37,6 +36,7 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
+					<Col xs={1} id="hide-when-md"></Col>
 					<Col>
 						<button id="btn-to-home">
 							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
@@ -59,25 +59,28 @@ class App extends Component {
 				<Row>
 					<Col xs={12} lg={7} id="result-container">
 						{/* the list of clues, narrowed down to whatever is in the search query */}
-						{SkillingRiddleData.map((riddle, index) => {
+						{SimpleClueData.map((simple, index) => {
+							let simpleImage = simple.image;
 
-							if (riddle.riddle.toLowerCase().includes(this.state.query.toLowerCase())) {
-
+							if (simple.task.toLowerCase().includes(this.state.query.toLowerCase())) {
 								return <div className="results" key={index}>
-									<span>Riddle:</span>
-									<p>{riddle.riddle}</p>
-									<span>Solution:</span>
-									<p>{riddle.solution}</p>
-									<hr />
-									<div style={riddle.requirements.quest === "N/A" ? { display: "none" } : { display: "block" }}>
-										<span>Quest requirement:</span>
-										<p>{riddle.requirements.quest}</p>
-									</div>
-
-									<div style={riddle.requirements.skills[0] === "N/A" ? { display: "none" } : { display: "block" }}>
-										<span>Skill requirements:</span>
-										<p>{riddle.requirements.skills}</p>
-									</div>
+									<Row>
+										<Col xs={12}>
+											<span>Task:</span>
+											<p className="question-text">{simple.task}</p>
+										</Col>
+									</Row>
+									<Row>
+										<Col xs={12} md={6}>
+											<img
+												alt="simple_image_failed_to_load"
+												src={process.env.PUBLIC_URL + '/images/simple_locations/Simple_clue_' + simpleImage} />
+										</Col>
+										<Col xs={12} md={6}>
+											<span>Location:</span>
+											<p>{simple.location}</p>
+										</Col>
+									</Row>
 								</div>
 							}
 						})}
@@ -88,7 +91,7 @@ class App extends Component {
 
 						<div className="side-menu-current">
 							<p className="margin-bottom-zero"><span className="span-no-underline">Currently on:</span></p>
-							<p className="margin-bottom-zero"><span className="span-no-underline">Skilling Riddles</span></p>
+							<p className="margin-bottom-zero"><span className="span-no-underline">Simple Clues</span></p>
 						</div>
 
 						<hr className="side-menu-hr" />
@@ -106,11 +109,6 @@ class App extends Component {
 						<Link
 							to={"/treasure-trails/coordinates"}>
 							<p className="side-menu-options">Coordinates</p>
-						</Link>
-
-						<Link
-							to={"/treasure-trails/cryptics"}>
-							<p className="side-menu-options">Cryptics</p>
 						</Link>
 
 						<Link
@@ -134,9 +132,10 @@ class App extends Component {
 						</Link>
 
 						<Link
-							to={"/treasure-trails/simpleclues"}>
-							<p className="side-menu-options">Simple Clues</p>
+							to={"/treasure-trails/skillingriddles"}>
+							<p className="side-menu-options">Skilling Riddles</p>
 						</Link>
+
 					</Col>
 				</Row>
 			</div>
