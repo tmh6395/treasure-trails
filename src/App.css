@@ -274,6 +274,12 @@ hr{
 	}
 }
 
+@media only screen and (max-width: 1024px){
+	.cryptic-question-text{
+		font-size: 20pt;
+	}
+}
+
 @media only screen and (max-width: 1023px){
 	#side-design{
 		display: none;
@@ -295,9 +301,6 @@ hr{
 	}
 	.map-results{
 		margin: 1rem auto;
-	}
-	.btn-to-home-map{
-		/* margin-left: 2rem !important; */
 	}
 	#tip-header, #hide-when-md{
 		display: none;
@@ -334,7 +337,7 @@ hr{
 		display: block;
 	}
 	.cryptic-question-text{
-		font-size: 12pt;
+		font-size: 16pt;
 	}
 	.div-lockboxes{
 		margin: 0 1rem;

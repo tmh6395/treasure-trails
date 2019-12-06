@@ -75,7 +75,7 @@ class App extends Component {
 									<Row>
 										<Col xs={12}>
 											<span>Cryptic:</span>
-											<p className="question-text">{cryptic.riddle}</p>
+											<p className="question-text cryptic-question-text">{cryptic.riddle}</p>
 										</Col>
 									</Row>
 									<Row>
