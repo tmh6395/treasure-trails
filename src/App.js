@@ -24,16 +24,16 @@ class App extends Component {
           <Col>
             <Switch>
               <Route exact path="/treasure-trails" component={Home} />
-              <Route path="/treasure-trails/anagrams" component={Anagrams} />
-              <Route path="/treasure-trails/challenges" component={Challenges} />
-              <Route path="/treasure-trails/coordinates" component={Coordinates} />
-              <Route path="/treasure-trails/cryptics" component={Cryptics} />
-              <Route path="/treasure-trails/lockboxes" component={Lockboxes} />
-              <Route path="/treasure-trails/maps" component={Maps} />
-              <Route path="/treasure-trails/puzzleboxguide" component={Puzzlebox} />
-              <Route path="/treasure-trails/scans" component={Scans} />
-              <Route path="/treasure-trails/simpleclues" component={SimpleClues} />
-              <Route path="/treasure-trails/skillingriddles" component={SkillingRiddles} />
+              <Route exact path="/treasure-trails/anagrams" component={Anagrams} />
+              <Route exact path="/treasure-trails/challenges" component={Challenges} />
+              <Route exact path="/treasure-trails/coordinates" component={Coordinates} />
+              <Route exact path="/treasure-trails/cryptics" component={Cryptics} />
+              <Route exact path="/treasure-trails/lockboxes" component={Lockboxes} />
+              <Route exact path="/treasure-trails/maps" component={Maps} />
+              <Route exact path="/treasure-trails/puzzleboxguide" component={Puzzlebox} />
+              <Route exact path="/treasure-trails/scans" component={Scans} />
+              <Route exact path="/treasure-trails/simpleclues" component={SimpleClues} />
+              <Route exact path="/treasure-trails/skillingriddles" component={SkillingRiddles} />
               {/* next step: maybe make a route for simple clues?
             https://runescape.wiki/w/Treasure_Trails/Guide/Simple_clues
             */}

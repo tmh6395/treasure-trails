@@ -47,13 +47,14 @@ class App extends Component {
 		return (<>
 			<form id="search-form" onSubmit={this.formPreventDefault}>
 				<Row className="header-row">
+					<Col xs={1} id="hide-when-md"></Col>
+					<Col lg={5} className="align-self-center" id="tip-header">
+						<p className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
+					</Col>
 					<Col>
-						<button id="btn-to-home" className="btn-to-home-map">
+						<button id="btn-to-home">
 							<Link to={"/treasure-trails"} id="link-to-home"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 						</button>
-					</Col>
-					<Col xs={8} className="align-self-center">
-						<p id="tip-header-searchless" className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
 					</Col>
 				</Row>
 			</form>
@@ -61,7 +62,7 @@ class App extends Component {
 			<div>
 				<Row>
 					<Col xs={12}>
-						<p id="tip-below-header-searchless" className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
+						<p id="tip-below-header" className="margin-bottom-zero">• Click a map to toggle between its scroll and overworld variants.</p>
 					</Col>
 				</Row>
 				<Row>

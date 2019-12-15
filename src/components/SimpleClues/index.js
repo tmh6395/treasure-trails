@@ -112,6 +112,11 @@ class App extends Component {
 						</Link>
 
 						<Link
+							to={"/treasure-trails/cryptics"}>
+							<p className="side-menu-options">Cryptics</p>
+						</Link>
+
+						<Link
 							to={"/treasure-trails/lockboxes"}>
 							<p className="side-menu-options">Lockboxes</p>
 						</Link>
